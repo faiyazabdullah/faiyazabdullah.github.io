@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>How Small Models Are Beating Giants by Md. Faiyaz Abdullah Sayeedi</title>
+
+	<!-- meta -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- css -->
+	<link rel="stylesheet" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../css/ionicons.min.css">
+	<link rel="stylesheet" href="../../css/pace.css">
+	<link rel="stylesheet" href="../../css/custom.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+	<!-- js -->
+	<script src="../../js/jquery-2.1.3.min.js"></script>
+	<script src="../../js/bootstrap.min.js"></script>
+	<script src="../../js/pace.min.js"></script>
+	<script src="../../js/modernizr.custom.js"></script>
+
+	<style>
+		article ul,
+		article ol {
+			font-size: 1.5rem;
+			/* slightly larger font size */
+			line-height: 1.6;
+			margin-bottom: 1rem;
+			padding-left: 1.5rem;
+		}
+
+		article ul li,
+		article ol li {
+			margin-bottom: 0.5rem;
+			/* spacing between list items */
+		}
+
+		article ul li::marker,
+		article ol li::marker {
+			color: #007BFF;
+			/* optional: gives a nice color to bullets/numbers */
+		}
+
+		article section {
+			margin-top: 1.5rem;
+			margin-bottom: 1.5rem;
+		}
+
+		article section {
+			position: relative;
+		}
+
+		article section::before {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 2px;
+			background-color: #333;
+			margin-bottom: 1.5rem;
+		}
+	</style>
+</head>
+
+<body class="graph-paper">
+	<!-- navigation -->
+	<div class="container">
+		<header id="site-header">
+			<div class="row">
+				<div class="col-md-10 col-sm-10 col-xs-10">
+					<div class="logo">
+						<h1 style="margin-top: 1.5rem;"><a href="index.html"><b>Md. Faiyaz Abdullah<span
+										class="hidden-xs hidden-sm">Sayeedi</span></a></h1>
+					</div>
+				</div><!-- col-md-4 -->
+				<div class="col-md-2 col-sm-2 col-xs-2" style="text-align: right !important;">
+					<button type="button" id="trigger-overlay" class="menu-toggle">
+						<span class="ion-navicon"></span>
+					</button>
+				</div>
+			</div>
+		</header>
+	</div>
+
+	<div class="content-body">
+		<div class="container">
+			<div class="row">
+				<div class="site-navigation hidden-xs hidden-sm">
+					<nav>
+						<ul class="nav-list">
+							<li><a href="../../index.html">About</a></li>
+							<li><a href="../../articles.html">Articles</a></li>
+							<li><a href="../../projects.html">Projects</a></li>
+							<li><a href="../../datasets.html">Datasets</a></li>
+							<li><a href="../../publications.html">Publications</a></li>
+							<li><a href="../../curriculumvita.html">Curriculum vitae</a></li>
+							<a href="../../honor_achievement.html">Honor & Achievement</a>
+						</ul>
+					</nav>
+				</div>
+
+				<!-- article section-->
+				<main class="col-md-12">
+					<article class="post">
+						<header class="entry-header">
+							<h1 class="entry-title" style="font-size: 48px !important;">
+								<a href="" target="_blank">How Small Models Are Beating Giants: The Rise of Efficient Machine Learning</a>
+							</h1>
+							<div class="entry-meta">
+								<span class="post-category">ML</span>
+								<span class="post-date"><time class="entry-date"
+										datetime="2025-05-18T00:00:00+00:00">May 18, 2025</time></span>
+							</div>
+						</header>
+						<figure style="margin: 0; padding: 0; width: 100%; overflow: hidden;">
+							<img src="blog_banner.png" alt="banner" style="width: 100%; height: auto; display: block;">
+						</figure>
+				
+						<div class="entry-content clearfix">
+							<section>
+								<h2>Introduction: The Size Illusion in Machine Learning</h2>
+								<p>In recent years, machine learning has been largely dominated by massive models with billions of parameters—like OpenAI's GPT-4, Google's PaLM 2, and Meta’s LLaMA 3. These "foundation models" promise powerful capabilities, but come with a hefty price: huge computational costs, massive carbon footprints, and accessibility barriers. However, a silent revolution is brewing—smaller, smarter models are emerging, offering comparable performance with a fraction of the resources. This shift toward efficiency could reshape the future of AI development, especially in resource-constrained environments.</p>
+							</section>
+				
+							<section>
+								<h2>Why Smaller Models Matter</h2>
+								<p>Large language models are typically trained using massive datasets and GPU clusters, which limit their deployment to only well-funded organizations. According to a 2022 study by AI Index, training GPT-3 consumed an estimated 1,287 MWh of electricity—enough to power 120 U.S. homes for a year (<a href="https://aiindex.stanford.edu/report/" target="_blank" rel="noopener noreferrer">AI Index, 2022</a>). In contrast, smaller models like DistilBERT or MobileBERT offer up to 60% smaller sizes with 95% of the original model's performance (<a href="https://arxiv.org/abs/1910.01108" target="_blank" rel="noopener noreferrer">Sanh et al., 2019</a>). This means they can be deployed on mobile phones, IoT devices, or even microcontrollers—opening doors to real-world, on-the-edge applications.</p>
+							</section>
+				
+							<section>
+								<h2>Techniques Powering Small Models</h2>
+								<p>How do small models achieve competitive performance? Several key techniques are responsible:</p>
+								<ul>
+									<li><strong>Knowledge Distillation:</strong> A smaller “student” model learns to mimic the behavior of a larger “teacher” model (<a href="https://arxiv.org/abs/1503.02531" target="_blank" rel="noopener noreferrer">Hinton et al., 2015</a>).</li>
+									<li><strong>Pruning:</strong> Removing less important parameters from a model without significant accuracy loss (<a href="https://arxiv.org/abs/1506.02626" target="_blank" rel="noopener noreferrer">Han et al., 2015</a>).</li>
+									<li><strong>Quantization:</strong> Representing weights with fewer bits (e.g., 8-bit instead of 32-bit), greatly reducing size and inference time (<a href="https://arxiv.org/abs/1712.05877" target="_blank" rel="noopener noreferrer">Jacob et al., 2017</a>).</li>
+									<li><strong>Architecture Optimization:</strong> Designing models like EfficientNet (<a href="https://arxiv.org/abs/1905.11946" target="_blank" rel="noopener noreferrer">Tan & Le, 2019</a>) and TinyML models specifically for low-resource environments.</li>
+								</ul>
+							</section>
+				
+							<section>
+								<h2>Real-World Impact: From Phones to Farms</h2>
+								<p>Efficient models aren’t just academic novelties—they’re already changing the world. In healthcare, models like TinyML are used for early disease detection in remote clinics without internet (<a href="https://www.arm.com/why-arm/technologies/tinyml" target="_blank" rel="noopener noreferrer">Arm</a>). In agriculture, farmers use low-cost embedded sensors powered by TinyML to detect crop diseases or optimize irrigation (<a href="https://www.edgeimpulse.com/blog/tinyml-in-agriculture-use-cases" target="_blank" rel="noopener noreferrer">Edge Impulse</a>). In mobile applications, models like Whisper.cpp and DistilBERT are being used for on-device speech recognition, text classification, and sentiment analysis without sending data to the cloud—improving privacy and speed.</p>
+							</section>
+				
+							<section>
+								<h2>Sustainability and Accessibility</h2>
+								<p>The environmental impact of large models is not just technical—it's ethical. Researchers are now urging a focus on Green AI (<a href="https://arxiv.org/abs/1907.10597" target="_blank" rel="noopener noreferrer">Schwartz et al., 2019</a>), which emphasizes improving efficiency over brute-force scaling. Small models, by virtue of requiring less data, compute, and storage, make machine learning more inclusive and sustainable. Open-weight initiatives like Mistral and GPT-NeoX are leveling the playing field by offering high-quality models that are lighter and open-source (<a href="https://mistral.ai/news/mistral-7b/" target="_blank" rel="noopener noreferrer">Mistral AI</a>).</p>
+							</section>
+				
+							<section>
+								<h2>What’s Next?</h2>
+								<p>The future of machine learning may no longer be about building ever-larger models but about doing more with less. With breakthroughs in edge AI, neuromorphic computing, and hardware-aware neural architecture search (NAS), we may soon see a world where tiny models power smart cities, wearable health monitors, and autonomous drones. Research is increasingly focused on energy-efficient AI as a frontier—where size doesn’t compromise intelligence, and efficiency drives innovation.</p>
+							</section>
+				
+							<section>
+								<h2>Final Thoughts</h2>
+								<p>While giant models like GPT-4 get the spotlight, the underdog story of efficient models is arguably more impactful. They represent a future where AI is not just powerful but also practical, ethical, and accessible. Whether you’re a researcher, engineer, or policymaker, the rise of small models signals a new era—where intelligence isn’t measured by size, but by impact.</p>
+							</section>
+						</div>
+					</article>
+				</main>				
+
+			</div>
+		</div>
+
+		<!-- Contact Form -->
+		<div class="container" style="margin-top: 6rem;">
+			<div class="row">
+				<h2 class="title text-center">Let's Connect</h2>
+				<div class="col-md-8">
+					<article class="post" style="margin-top: 2rem;">
+						<div class="entry-content clearfix">
+							<form action="mailto:faiyazabdullah114708@gmail.com" method="post" enctype="text/plain"
+								class="contact-form">
+								<div class="row">
+									<div class="col-md-12">
+										<input type="text" name="name" placeholder="Name" required>
+										<input type="email" name="email" placeholder="Email" required>
+										<input type="text" name="subject" placeholder="Subject" required>
+										<textarea name="message" rows="7" placeholder="Your Message"
+											required></textarea>
+										<div class="text-center">
+											<button class="btn-send btn-5 btn-5b ion-ios-paperplane"><span>Drop Me a
+													Line</span></button>
+										</div>
+									</div>
+								</div> <!-- row -->
+							</form>
+						</div>
+					</article>
+
+					<div class="col-md-12" style="margin-top: 6rem;">
+						<ul class="social">
+							<li class="facebook"><a href="https://www.facebook.com/faiyazabdullah336908"
+									target="_blank"><span class="ion-social-facebook"></span></a></li>
+							<li class="linkedin"><a href="https://www.linkedin.com/in/mdfaiyazabdullahsayeedi/"
+									target="_blank"><span class="ion-social-linkedin"></span></a></li>
+							<li class="github"><a href="https://github.com/faiyazabdullah" target="_blank"><span
+										class="ion-social-github"></span></a></li>
+						</ul>
+					</div>
+				</div>
+				<aside class="col-md-4">
+					<div class="widget widget-info">
+						<h3 class="widget-title">Personal Information</h3>
+						<ul>
+							<li>
+								<p>phone: +8801704054900</p>
+							</li>
+							<li>
+								<p>email: faiyazabdullah114708@gmail.com</p>
+							</li>
+							<li>
+								<p>address: Kasba, Chittagong, Bangladesh</p>
+							</li>
+						</ul>
+					</div>
+					<div class="widget widget-link">
+						<h3 class="widget-title">Social Links</h3>
+						<ul>
+							<li>
+								<a href="https://www.linkedin.com/in/mdfaiyazabdullahsayeedi/"
+									target="_blank">linkedin/mdfaiyazabdullahsayeedi</a>
+							</li>
+							<li>
+								<a href="https://scholar.google.com/citations?user=gLTfVpwAAAAJ&hl=en"
+									target="_blank">scholar/mdfaiyazabdullahsayeedi</a>
+							</li>
+							<li>
+								<a href="https://github.com/faiyazabdullah"
+									target="_blank">github/mdfaiyazabdullahsayeedi</a>
+							</li>
+							<li>
+								<a href="https://www.researchgate.net/profile/Md-Sayeedi"
+									target="_blank">researchgate/mdfaiyazabdullahsayeedi</a>
+							</li>
+							<li>
+								<a href="https://orcid.org/0009-0007-3079-7806"
+									target="_blank">orcid/mdfaiyazabdullahsayeedi</a>
+							</li>
+							<li>
+								<a href="https://www.facebook.com/faiyazabdullah336908"
+									target="_blank">facebook/faiyazabdullah</a>
+							</li>
+						</ul>
+					</div>
+					<div class="widget widget-nav">
+						<h3 class="widget-title">Site Navigation</h3>
+						<ul>
+							<li>
+								<a href="../../index.html">About</a>
+							</li>
+							<li>
+								<a href="../../articles.html">Articles</a>
+							</li>
+							<li>
+								<a href="../../projects.html">Projects</a>
+							</li>
+							<li>
+								<a href="../../datasets.html">Datasets</a>
+							</li>
+							<li>
+								<a href="../../publications.html">Publications</a>
+							</li>
+							<li>
+								<a href="../../curriculumvita.html">Curriculum vitae</a>
+							</li>
+							<li>
+								<a href="../../honor_achievement.html">Honor & Achievement</a>
+							</li>
+						</ul>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer id="site-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p class="copyright">&copy; 2025 Md. Faiyaz Abdullah Sayeedi. Powered by <a
+							href="https://github.com/UIU-Developers-Hub">@UIU Developers Hub</a>. Hosted by GitHub
+						Pages.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Mobile Menu -->
+	<div class="overlay overlay-hugeinc">
+		<button type="button" class="overlay-close"><span class="ion-ios-close-empty"></span></button>
+		<nav>
+			<ul>
+				<li>
+					<a href="../../index.html">About</a>
+				</li>
+				<li>
+					<a href="../../articles.html">Articles</a>
+				</li>
+				<li>
+					<a href="../../projects.html">Projects</a>
+				</li>
+				<li>
+					<a href="../../datasets.html">Datasets</a>
+				</li>
+				<li>
+					<a href="../../publications.html">Publications</a>
+				</li>
+				<li>
+					<a href="../../curriculumvita.html">Curriculum vitae</a>
+				</li>
+				<li>
+					<a href="../../honor_achievement.html">Honor & Achievement</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+	<!-- whatsapp button -->
+	<a href="https://wa.me/+8801704054900?text=Hello%20I%20want%20to%20know%20more..." class="whatsapp-float"
+		target="_blank" aria-label="Chat on WhatsApp" style="background-color: rgb(225, 225, 225) !important;">
+		<img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" alt="WhatsApp Chat"
+			title="Reach me on WhatsApp" style="background-color: rgb(225, 225, 225) !important;" />
+	</a>
+
+	<script src="../../js/script.js"></script>
+	<!-- jQuery and JS logic -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</body>
+
+</html>
