@@ -44,482 +44,254 @@
 
     <div class="content-body">
         <div class="container">
+            <div class="site-navigation hidden-xs hidden-sm">
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="articles.html">Articles</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="datasets.html">Datasets</a></li>
+                        <li><strong>Publications</strong></li>
+                        <li><a href="curriculumvita.html">Curriculum vitae</a></li>
+                        <li><a href="honor_achievement.html">Honor &amp; Achievement</a></li>
+                    </ul>
+                </nav>
+            </div>
             <div class="row">
-                <main class="col-md-8" style="margin-top: 5rem;">
-                    <!-- Search bar -->
-                    <input type="text" id="searchInput" class="form-control" placeholder="Search publications...">
+                <main class="col-md-12" style="margin-top: 3rem;">
+                    <div class="highlight">
+                        <h1 class="title text-center" style="padding: 2rem; padding-bottom: 0px !important;">Publications</h1>
+                    </div>
 
-                    <!-- Articles Section -->
-                    <div id="pubContainer" style="min-height: 65vh; margin-top: 3rem;">
-                        <!-- START OF PUBLICATION LIST -->
+                    <p style="text-align: center; color: #777; font-family: 'Ubuntu', sans-serif; font-size: 15px; margin-bottom: 2rem;">
+                        16 peer-reviewed papers &mdash; 3 journal articles, 8 conference papers and 5 workshop papers.
+                        <strong>Bold</strong> marks my name; * marks equal contribution.
+                    </p>
 
-                        <article class="post">
-                            <header class="entry-header">
-                                <h1 class="entry-title">
-                                    <a href="https://ieeexplore.ieee.org/document/11036671" target="_blank">JailbreakTracer: Explainable Detection of Jailbreaking Prompts in LLMs Using Synthetic Data Generation</a>
-                                </h1>
-                                <div class="entry-meta">
-                                    <span class="entry-content clearfix">Authors: <strong>Md. Faiyaz Abdullah Sayeedi</strong>, Maaz Bin Hossain, Md Kamrul Hassan, Sabrina Afrin, Molla Md Sabit, Md Shohrab Hossain</span>
-                                </div>
-                                <div style="text-align: left !important; margin: 1rem 0;">
-                                <span class="tag">IEEE Access</span>
-                                <span class="tag">Journal</span>
-                                </div>
-                            </header>
-                            <div class="entry-content clearfix">
-                                <p><strong>TL;DR:</strong> Introduces a synthetic prompt generation framework and an explainable detection pipeline for jailbreaking attempts in large language models.</p>
-                                <div style="display: flex; justify-content: center; align-items: center; text-align: center; flex-wrap: wrap;">
-                                    <a class="highlight" href="https://ieeexplore.ieee.org/document/11036671" target="_blank" style="width: 20%; margin: 4px;">paper</a>
-                                    <a class="highlight" href="https://github.com/faiyazabdullah/JailbreakTracer" target="_blank" style="width: 20%; margin: 4px;">code</a>
-                                    <a class="highlight" href="https://www.kaggle.com/datasets/faiyazabdullah/jailbreaktracer-corpus" target="_blank" style="width: 20%; margin: 4px;">dataset</a>
-                                </div>
-                            </div>
-                        </article>
+                    <input type="text" id="searchInput" class="pub-search" placeholder="Search by title, author or venue…" autocomplete="off">
+                    <p id="pubEmpty" class="pub-empty" style="display:none;">No publications match that search.</p>
 
-                        <article class="post">
-                            <header class="entry-header">
-                                <h1 class="entry-title">
-                                    <a href="https://www.sciencedirect.com/science/article/pii/S2352340925000630" target="_blank">ElectroCom61: A Multiclass Dataset for Detection of Electronic Components</a>
-                                </h1>
-                                <div class="entry-meta">
-                                    <span class="entry-content clearfix">Authors: <strong>Md. Faiyaz Abdullah Sayeedi</strong>, Anas Mohammad Ishfaqul Muktadir Osmani, Taimur Rahman, Jannatul Ferdous Deepti, Raiyan Rahman, Salekul Islam</span>
-                                </div>
-                                <div style="text-align: left !important; margin: 1rem 0;">
-                                <span class="tag">Data in Brief</span>
-                                <span class="tag">Elsevier</span>
-                                </div>
-                            </header>
-                            <div class="entry-content clearfix">
-                                <p><strong>TL;DR:</strong> Introduces ElectroCom61, a labeled dataset of 61 common electronic components for object detection and classification tasks.</p>
-                                <div style="display: flex; justify-content: center; align-items: center; text-align: center; flex-wrap: wrap;">
-                                    <a class="highlight" href="https://www.sciencedirect.com/science/article/pii/S2352340925000630" target="_blank" style="width: 20%; margin: 4px;">paper</a>
-                                    <a class="highlight" href="https://github.com/faiyazabdullah/ElectroCom61" target="_blank" style="width: 20%; margin: 4px;">code</a>
-                                    <a class="highlight" href="https://data.mendeley.com/datasets/6scy6h8sjz/2" target="_blank" style="width: 20%; margin: 4px;">dataset</a>
-                                </div>
-                            </div>
-                        </article>
+                    <div id="pubContainer" style="min-height: 55vh; margin-top: 3rem;">
 
-                        <article class="post">
-                            <header class="entry-header">
-                                <h1 class="entry-title">
-                                    <a href="https://www.mdpi.com/2076-3417/14/13/5459" target="_blank">A Comparative Analysis for Optimizing Machine Learning Model Deployment in IoT Devices</a>
-                                </h1>
-                                <div class="entry-meta">
-                                    <span class="entry-content clearfix">Authors: <strong>Md. Faiyaz Abdullah Sayeedi</strong>, Jannatul Ferdous Deepti, Anas Mohammad Ishfaqul Muktadir Osmani, Taimur Rahman, Safrin Sanzida Islam, Md. Motaharul Islam</span>
-                                </div>
-                                <div style="text-align: left !important; margin: 1rem 0;">
-                                <span class="tag">Applied Sciences</span>
-                                <span class="tag">MDPI</span>
-                                </div>
-                            </header>
-                            <div class="entry-content clearfix">
-                                <p><strong>TL;DR:</strong> Benchmarks machine learning model deployment strategies on resource-constrained IoT devices and compares their accuracy, latency and footprint trade-offs.</p>
-                                <div style="display: flex; justify-content: center; align-items: center; text-align: center; flex-wrap: wrap;">
-                                    <a class="highlight" href="https://www.mdpi.com/2076-3417/14/13/5459" target="_blank" style="width: 20%; margin: 4px;">paper</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="post">
-                            <header class="entry-header">
-                                <h1 class="entry-title">
-                                    <a href="https://arxiv.org/abs/2603.21165" target="_blank">Many Dialects, Many Languages, One Cultural Lens: Evaluating Multilingual VLMs for Bengali Culture Understanding Across Historically Linked Languages and Regional Dialects</a>
-                                </h1>
-                                <div class="entry-meta">
-                                    <span class="entry-content clearfix">Authors: <strong>Md. Faiyaz Abdullah Sayeedi*</strong>, Nurul Labib Sayeedi*, Shubhashis Roy Dipta, Rubaya Tabassum, Ariful Ekraj Hridoy, Mehraj Mahmood, Mahbub E Sobhani, Md Tarek Hasan, Swakkhar Shatabda <strong><i>(* indicates equal contribution)</i></strong></span>
-                                </div>
-                                <div style="text-align: left !important; margin: 1rem 0;">
-                                <span class="tag">EMNLP 2026</span>
-                                <span class="tag">Findings</span>
-                                </div>
-                            </header>
-                            <div class="entry-content clearfix">
-                                <p><strong>TL;DR:</strong> Evaluates multilingual vision-language models on Bengali cultural understanding across historically linked languages and regional dialects.</p>
-                                <div style="display: flex; justify-content: center; align-items: center; text-align: center; flex-wrap: wrap;">
-                                    <a class="highlight" href="https://arxiv.org/abs/2603.21165" target="_blank" style="width: 20%; margin: 4px;">paper</a>
-                                    <a class="highlight" href="https://github.com/faiyazabdullah/BanglaVerse" target="_blank" style="width: 20%; margin: 4px;">code</a>
-                                    <a class="highlight" href="https://huggingface.co/datasets/FaiyazAbdullah114708/BanglaVerse" target="_blank" style="width: 20%; margin: 4px;">dataset</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="post">
-                            <header class="entry-header">
-                                <h1 class="entry-title">
-                                    <a href="https://arxiv.org/abs/2510.07877v1" target="_blank">Ready to Translate, Not to Represent? Bias and Performance Gaps in Multilingual LLMs Across Language Families and Domains</a>
-                                </h1>
-                                <div class="entry-meta">
-                                    <span class="entry-content clearfix">Authors: <strong>Md. Faiyaz Abdullah Sayeedi*</strong>, Md Mahbubul Alam*, Subhey Sadi Rahman*, MD. Adnanul Islam*, Jannatul Ferdous Deepty*, Tasnim Mohiuddin, Md. Mofijul Islam, Swakkahr Shatabda <strong><i>(* indicates equal contribution)</i></strong></span>
-                                </div>
-                                <div style="text-align: left !important; margin: 1rem 0;">
-                                <span class="tag">ACL 2026</span>
-                                <span class="tag">Findings</span>
-                                </div>
-                            </header>
-                            <div class="entry-content clearfix">
-                                <p><strong>TL;DR:</strong> Benchmarks translation performance and detects bias in multilingual LLMs across language families and domains.</p>
-                                <div style="display: flex; justify-content: center; align-items: center; text-align: center; flex-wrap: wrap;">
-                                    <a class="highlight" href="https://arxiv.org/abs/2510.07877v1" target="_blank" style="width: 20%; margin: 4px;">paper</a>
-                                    <a class="highlight" href="https://github.com/faiyazabdullah/TranslationTangles" target="_blank" style="width: 20%; margin: 4px;">code &amp; data</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="post">
-                            <header class="entry-header">
-                                <h1 class="entry-title">
-                                    <a href="https://arxiv.org/abs/2510.14305" target="_blank">MathMist: A Parallel Multilingual Benchmark Dataset for Mathematical Problem Solving and Reasoning</a>
-                                </h1>
-                                <div class="entry-meta">
-                                    <span class="entry-content clearfix">Authors: Mahbub E Sobhani, <strong>Md. Faiyaz Abdullah Sayeedi</strong>, Tasnim Mohiuddin, Md Mofijul Islam, Swakkhar Shatabda</span>
-                                </div>
-                                <div style="text-align: left !important; margin: 1rem 0;">
-                                <span class="tag">EACL 2026</span>
-                                <span class="tag">Findings</span>
-                                </div>
-                            </header>
-                            <div class="entry-content clearfix">
-                                <p><strong>TL;DR:</strong> Presents a parallel multilingual benchmark for evaluating mathematical problem solving and reasoning in large language models.</p>
-                                <div style="display: flex; justify-content: center; align-items: center; text-align: center; flex-wrap: wrap;">
-                                    <a class="highlight" href="https://arxiv.org/abs/2510.14305" target="_blank" style="width: 20%; margin: 4px;">paper</a>
-                                    <a class="highlight" href="https://github.com/mahbubhimel/MathMist" target="_blank" style="width: 20%; margin: 4px;">code</a>
-                                    <a class="highlight" href="https://huggingface.co/datasets/mahbubhimel/MathMist" target="_blank" style="width: 20%; margin: 4px;">dataset</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="post">
-                            <header class="entry-header">
-                                <h1 class="entry-title">
-                                    <a href="https://aclanthology.org/2026.starsem-conference.22/" target="_blank">Can LLMs Solve My Grandma&rsquo;s Riddle? Evaluating Multilingual Large Language Models on Reasoning Traditional Bangla Tricky Riddles</a>
-                                </h1>
-                                <div class="entry-meta">
-                                    <span class="entry-content clearfix">Authors: <strong>Md. Faiyaz Abdullah Sayeedi*</strong>, Nurul Labib Sayeedi*, Khushnur Binte Jahangir, Swakkhar Shatabda, Sarah Masud Preum <strong><i>(* indicates equal contribution)</i></strong></span>
-                                </div>
-                                <div style="text-align: left !important; margin: 1rem 0;">
-                                <span class="tag">*SEM 2026</span>
-                                <span class="tag">Poster Presentation</span>
-                                </div>
-                            </header>
-                            <div class="entry-content clearfix">
-                                <p><strong>TL;DR:</strong> Evaluates how well multilingual large language models reason over traditional Bangla tricky riddles.</p>
-                                <div style="display: flex; justify-content: center; align-items: center; text-align: center; flex-wrap: wrap;">
-                                    <a class="highlight" href="https://aclanthology.org/2026.starsem-conference.22/" target="_blank" style="width: 20%; margin: 4px;">paper</a>
-                                    <a class="highlight" href="https://github.com/Labib1610/BanglaRiddleEval" target="_blank" style="width: 20%; margin: 4px;">code</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="post">
-                            <header class="entry-header">
-                                <h1 class="entry-title">
-                                    <a href="https://openreview.net/forum?id=3s4hFx8pYs" target="_blank">MosquitoFusion: A Multiclass Dataset for Real-Time Detection of Mosquitoes, Swarms, and Breeding Sites Using Deep Learning</a>
-                                </h1>
-                                <div class="entry-meta">
-                                    <span class="entry-content clearfix">Authors: <strong>Md. Faiyaz Abdullah Sayeedi</strong>, Md Ashiqur Rahman, Fahim Hafiz</span>
-                                </div>
-                                <div style="text-align: left !important; margin: 1rem 0;">
-                                <span class="tag">ICLR 2024</span>
-                                <span class="tag">Notable &mdash; Top 5%</span>
-                                <span class="tag">Oral Presentation</span>
-                                </div>
-                            </header>
-                            <div class="entry-content clearfix">
-                                <p><strong>TL;DR:</strong> Introduces a high-resolution dataset to detect mosquitoes, swarms, and breeding sites using deep learning. Notable (Top 5%) paper in the ICLR 2024 Tiny Papers Track.</p>
-                                <div style="display: flex; justify-content: center; align-items: center; text-align: center; flex-wrap: wrap;">
-                                    <a class="highlight" href="https://openreview.net/forum?id=3s4hFx8pYs" target="_blank" style="width: 20%; margin: 4px;">paper</a>
-                                    <a class="highlight" href="https://github.com/faiyazabdullah/MosquitoFusion" target="_blank" style="width: 20%; margin: 4px;">code</a>
-                                    <a class="highlight" href="https://www.kaggle.com/datasets/faiyazabdullah/mosquitofusion-dataset" target="_blank" style="width: 20%; margin: 4px;">dataset</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="post">
-                            <header class="entry-header">
-                                <h1 class="entry-title">
-                                    <a href="https://ieeexplore.ieee.org/abstract/document/10752222" target="_blank">MosquitoMiner: A Light Weight Rover for Detecting and Eliminating Mosquito Breeding Sites</a>
-                                </h1>
-                                <div class="entry-meta">
-                                    <span class="entry-content clearfix">Authors: MD. Adnanul Islam, <strong>Md. Faiyaz Abdullah Sayeedi</strong>, Jannatul Ferdous Deepti, Shahanur Rahman Bappy, Safrin Sanzida Islam, Fahim Hafiz</span>
-                                </div>
-                                <div style="text-align: left !important; margin: 1rem 0;">
-                                <span class="tag">TENSYMP 2024</span>
-                                <span class="tag">Oral Presentation</span>
-                                </div>
-                            </header>
-                            <div class="entry-content clearfix">
-                                <p><strong>TL;DR:</strong> A lightweight autonomous rover that detects and eliminates mosquito breeding sites using deep learning based vision.</p>
-                                <div style="display: flex; justify-content: center; align-items: center; text-align: center; flex-wrap: wrap;">
-                                    <a class="highlight" href="https://ieeexplore.ieee.org/abstract/document/10752222" target="_blank" style="width: 20%; margin: 4px;">paper</a>
-                                    <a class="highlight" href="https://github.com/faiyazabdullah/MosquitoMiner" target="_blank" style="width: 20%; margin: 4px;">code</a>
-                                    <a class="highlight" href="https://youtu.be/VjfZQ4wg4fo?si=EnXBxRBhhO32ySQ6" target="_blank" style="width: 20%; margin: 4px;">presentation</a>
-                                    <a class="highlight" href="https://youtu.be/UL2HmXnCcOk?si=wmeyFCr_HBQmp7KE" target="_blank" style="width: 20%; margin: 4px;">demo</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="post">
-                            <header class="entry-header">
-                                <h1 class="entry-title">
-                                    <a href="https://www.researchgate.net/profile/Md-Sayeedi/publication/380823901_BrailleSense_Deep_Learning_for_Braille_Character_Classification/links/66503d8d0b0d2845745498af/BrailleSense-Deep-Learning-for-Braille-Character-Classification.pdf" target="_blank">BrailleSense: Deep Learning for Braille Character Classification</a>
-                                </h1>
-                                <div class="entry-meta">
-                                    <span class="entry-content clearfix">Authors: <strong>Md. Faiyaz Abdullah Sayeedi</strong>, Anas Mohammad Ishfaqul Muktadir Osmani, Dewan Md. Farid</span>
-                                </div>
-                                <div style="text-align: left !important; margin: 1rem 0;">
-                                <span class="tag">ICEEICT 2024</span>
-                                <span class="tag">Oral Presentation</span>
-                                </div>
-                            </header>
-                            <div class="entry-content clearfix">
-                                <p><strong>TL;DR:</strong> A deep learning approach for classifying Braille characters to support accessibility tools for visually impaired users.</p>
-                                <div style="display: flex; justify-content: center; align-items: center; text-align: center; flex-wrap: wrap;">
-                                    <a class="highlight" href="https://www.researchgate.net/profile/Md-Sayeedi/publication/380823901_BrailleSense_Deep_Learning_for_Braille_Character_Classification/links/66503d8d0b0d2845745498af/BrailleSense-Deep-Learning-for-Braille-Character-Classification.pdf" target="_blank" style="width: 20%; margin: 4px;">paper</a>
-                                    <a class="highlight" href="https://github.com/faiyazabdullah/BrailleNet" target="_blank" style="width: 20%; margin: 4px;">code</a>
-                                    <a class="highlight" href="https://youtu.be/pIBeAQVHl0g?si=nqRBpbaPQZNHD_My" target="_blank" style="width: 20%; margin: 4px;">presentation</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="post">
-                            <header class="entry-header">
-                                <h1 class="entry-title">
-                                    <a href="https://www.researchgate.net/profile/Md-Sayeedi/publication/374629560_Fem-Scale_A_Data-Driven_Approach_for_Quantifying_Degree_of_Individual_Feminism_Perspective/links/653242501d6e8a70703f2a11/Fem-Scale-A-Data-Driven-Approach-for-Quantifying-Degree-of-Individual-Feminism-Perspective.pdf" target="_blank">Fem-Scale: A Data-Driven Approach for Quantifying Degree of Individual Feminism Perspective</a>
-                                </h1>
-                                <div class="entry-meta">
-                                    <span class="entry-content clearfix">Authors: Jannatul Ferdous Deepti, <strong>Md. Faiyaz Abdullah Sayeedi</strong>, Anayatul Ahad Shoikot, Safrin Sanzida Islam, Anika Tasnim Rodela, Akib Zaman</span>
-                                </div>
-                                <div style="text-align: left !important; margin: 1rem 0;">
-                                <span class="tag">InC4 2023</span>
-                                <span class="tag">Oral Presentation</span>
-                                </div>
-                            </header>
-                            <div class="entry-content clearfix">
-                                <p><strong>TL;DR:</strong> A data-driven scale for quantifying the degree of an individual&rsquo;s feminism perspective.</p>
-                                <div style="display: flex; justify-content: center; align-items: center; text-align: center; flex-wrap: wrap;">
-                                    <a class="highlight" href="https://www.researchgate.net/profile/Md-Sayeedi/publication/374629560_Fem-Scale_A_Data-Driven_Approach_for_Quantifying_Degree_of_Individual_Feminism_Perspective/links/653242501d6e8a70703f2a11/Fem-Scale-A-Data-Driven-Approach-for-Quantifying-Degree-of-Individual-Feminism-Perspective.pdf" target="_blank" style="width: 20%; margin: 4px;">paper</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="post">
-                            <header class="entry-header">
-                                <h1 class="entry-title">
-                                    <a href="https://arxiv.org/abs/2510.17726" target="_blank">Rethinking Search: A Study of University Students&rsquo; Perspectives on Using LLMs and Traditional Search Engines in Academic Problem Solving</a>
-                                </h1>
-                                <div class="entry-meta">
-                                    <span class="entry-content clearfix">Authors: <strong>Md. Faiyaz Abdullah Sayeedi</strong>, Md. Sadman Haque, Zobaer Ibn Razzaque, Robiul Awoul Robin, Sabila Nawshin</span>
-                                </div>
-                                <div style="text-align: left !important; margin: 1rem 0;">
-                                <span class="tag">HCI+NLP @ EMNLP 2025</span>
-                                <span class="tag">Workshop</span>
-                                </div>
-                            </header>
-                            <div class="entry-content clearfix">
-                                <p><strong>TL;DR:</strong> A user study on how university students choose between large language models and traditional search engines for academic problem solving.</p>
-                                <div style="display: flex; justify-content: center; align-items: center; text-align: center; flex-wrap: wrap;">
-                                    <a class="highlight" href="https://arxiv.org/abs/2510.17726" target="_blank" style="width: 20%; margin: 4px;">paper</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="post">
-                            <header class="entry-header">
-                                <h1 class="entry-title">
-                                    <a href="https://openreview.net/forum?id=GNRjyXZmGY" target="_blank">MIMIC: Multimodal Islamophobic Meme Identification and Classification</a>
-                                </h1>
-                                <div class="entry-meta">
-                                    <span class="entry-content clearfix">Authors: <strong>Md. Faiyaz Abdullah Sayeedi*</strong>, S M Jishanul Islam*, Sadia Ahmmed*, Sahid Hossain Mustakim*, Swapnil Khandoker*, Syed Tasdid Azam Dhrubo*, Nahid Hossain <strong><i>(* indicates equal contribution)</i></strong></span>
-                                </div>
-                                <div style="text-align: left !important; margin: 1rem 0;">
-                                <span class="tag">MusIML @ NeurIPS 2024</span>
-                                <span class="tag">Poster Presentation</span>
-                                </div>
-                            </header>
-                            <div class="entry-content clearfix">
-                                <p><strong>TL;DR:</strong> Presents a multimodal dataset and benchmark for detecting Islamophobic content in memes using both image and text signals.</p>
-                                <div style="display: flex; justify-content: center; align-items: center; text-align: center; flex-wrap: wrap;">
-                                    <a class="highlight" href="https://openreview.net/forum?id=GNRjyXZmGY" target="_blank" style="width: 20%; margin: 4px;">paper</a>
-                                    <a class="highlight" href="https://github.com/faiyazabdullah/MIMIC" target="_blank" style="width: 20%; margin: 4px;">code</a>
-                                    <a class="highlight" href="https://youtu.be/2sLl2bN3oD8?si=zcgVc4cBNU1EhASN" target="_blank" style="width: 20%; margin: 4px;">presentation</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="post">
-                            <header class="entry-header">
-                                <h1 class="entry-title">
-                                    <a href="https://arxiv.org/abs/2512.16698" target="_blank">Do Multi-Agents Solve Better Than Single? Evaluating Agentic Frameworks for Diagram-Grounded Geometry Problem Solving and Reasoning</a>
-                                </h1>
-                                <div class="entry-meta">
-                                    <span class="entry-content clearfix">Authors: <strong>Md. Faiyaz Abdullah Sayeedi*</strong>, Mahbub E Sobhani*, Mohammad Nehad Alam, Proma Hossain Progga, Swakkhar Shatabda <strong><i>(* indicates equal contribution)</i></strong></span>
-                                </div>
-                                <div style="text-align: left !important; margin: 1rem 0;">
-                                <span class="tag">EACL 2026 SRW</span>
-                                <span class="tag">Workshop</span>
-                                </div>
-                            </header>
-                            <div class="entry-content clearfix">
-                                <p><strong>TL;DR:</strong> Compares single-agent and multi-agent frameworks on diagram-grounded geometry problem solving and reasoning.</p>
-                                <div style="display: flex; justify-content: center; align-items: center; text-align: center; flex-wrap: wrap;">
-                                    <a class="highlight" href="https://arxiv.org/abs/2512.16698" target="_blank" style="width: 20%; margin: 4px;">paper</a>
-                                    <a class="highlight" href="https://github.com/faiyazabdullah/Interpreter-Solver" target="_blank" style="width: 20%; margin: 4px;">code</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="post">
-                            <header class="entry-header">
-                                <h1 class="entry-title">
-                                    <a href="https://arxiv.org/abs/2506.14629" target="_blank">VisText-Mosquito: A Unified Multimodal Benchmark Dataset for Visual Detection, Segmentation, and Textual Reasoning on Mosquito Breeding Sites</a>
-                                </h1>
-                                <div class="entry-meta">
-                                    <span class="entry-content clearfix">Authors: <strong>Md. Faiyaz Abdullah Sayeedi*</strong>, Md. Adnanul Islam*, Md. Asaduzzaman Shuvo, Shahanur Rahman Bappy, Muhammad Ziaur Rahman, Md Asiful Islam, Swakkhar Shatabda <strong><i>(* indicates equal contribution)</i></strong></span>
-                                </div>
-                                <div style="text-align: left !important; margin: 1rem 0;">
-                                <span class="tag">CVPRW 2026</span>
-                                <span class="tag">Workshop</span>
-                                </div>
-                            </header>
-                            <div class="entry-content clearfix">
-                                <p><strong>TL;DR:</strong> A unified multimodal benchmark pairing visual detection and segmentation of mosquito breeding sites with textual reasoning.</p>
-                                <div style="display: flex; justify-content: center; align-items: center; text-align: center; flex-wrap: wrap;">
-                                    <a class="highlight" href="https://arxiv.org/abs/2506.14629" target="_blank" style="width: 20%; margin: 4px;">paper</a>
-                                    <a class="highlight" href="https://github.com/adnanul-islam-jisun/VisText-Mosquito" target="_blank" style="width: 20%; margin: 4px;">code</a>
-                                    <a class="highlight" href="https://data.mendeley.com/datasets/rtsfh7jh7p/2" target="_blank" style="width: 20%; margin: 4px;">dataset</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="post">
-                            <header class="entry-header">
-                                <h1 class="entry-title">
-                                    <a href="https://arxiv.org/abs/2605.24919" target="_blank">MultiHaluDet: Multilingual Hallucination Detection via LLM Hidden State Probing</a>
-                                </h1>
-                                <div class="entry-meta">
-                                    <span class="entry-content clearfix">Authors: Riasad Alvi, Nurul Labib Sayeedi, <strong>Md. Faiyaz Abdullah Sayeedi</strong></span>
-                                </div>
-                                <div style="text-align: left !important; margin: 1rem 0;">
-                                <span class="tag">MeLLM @ ACL 2026</span>
-                                <span class="tag">Workshop</span>
-                                </div>
-                            </header>
-                            <div class="entry-content clearfix">
-                                <p><strong>TL;DR:</strong> Detects hallucinations in multilingual settings by probing the hidden states of large language models.</p>
-                                <div style="display: flex; justify-content: center; align-items: center; text-align: center; flex-wrap: wrap;">
-                                    <a class="highlight" href="https://arxiv.org/abs/2605.24919" target="_blank" style="width: 20%; margin: 4px;">paper</a>
-                                    <a class="highlight" href="https://github.com/alvi-uiu/MULTIHALUDET" target="_blank" style="width: 20%; margin: 4px;">code</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <!-- Pagination -->
-                        <div class="text-center">
-                            <ul class="pagination" id="pagination"></ul>
+                        <div class="pub-group">
+                            <h3 class="pub-group-title">Journal Articles <span class="count">(3)</span></h3>
+                            <ul class="pub-list">
+                                <li class="pub-item">
+                                    <span class="pub-id">[J1]</span>
+                                    <div class="pub-body">
+                                        <h3 class="pub-title"><a href="https://ieeexplore.ieee.org/document/11036671" target="_blank" rel="noopener">JailbreakTracer: Explainable Detection of Jailbreaking Prompts in LLMs Using Synthetic Data Generation</a></h3>
+                                        <p class="pub-authors"><span class="me">Md. Faiyaz Abdullah Sayeedi</span>, Maaz Bin Hossain, Md Kamrul Hassan, Sabrina Afrin, Molla Md Sabit, Md Shohrab Hossain</p>
+                                        <p class="pub-venue">IEEE Access, 2025</p>
+                                        <ul class="pub-links">
+                                            <li><a href="https://ieeexplore.ieee.org/document/11036671" target="_blank" rel="noopener">paper</a></li>
+                                            <li><a href="https://github.com/faiyazabdullah/JailbreakTracer" target="_blank" rel="noopener">code</a></li>
+                                            <li><a href="https://www.kaggle.com/datasets/faiyazabdullah/jailbreaktracer-corpus" target="_blank" rel="noopener">dataset</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="pub-item">
+                                    <span class="pub-id">[J2]</span>
+                                    <div class="pub-body">
+                                        <h3 class="pub-title"><a href="https://www.sciencedirect.com/science/article/pii/S2352340925000630" target="_blank" rel="noopener">ElectroCom61: A Multiclass Dataset for Detection of Electronic Components</a></h3>
+                                        <p class="pub-authors"><span class="me">Md. Faiyaz Abdullah Sayeedi</span>, Anas Mohammad Ishfaqul Muktadir Osmani, Taimur Rahman, Jannatul Ferdous Deepti, Raiyan Rahman, Salekul Islam</p>
+                                        <p class="pub-venue">Data in Brief, Elsevier, 2024</p>
+                                        <ul class="pub-links">
+                                            <li><a href="https://www.sciencedirect.com/science/article/pii/S2352340925000630" target="_blank" rel="noopener">paper</a></li>
+                                            <li><a href="https://github.com/faiyazabdullah/ElectroCom61" target="_blank" rel="noopener">code</a></li>
+                                            <li><a href="https://data.mendeley.com/datasets/6scy6h8sjz/2" target="_blank" rel="noopener">dataset</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="pub-item">
+                                    <span class="pub-id">[J3]</span>
+                                    <div class="pub-body">
+                                        <h3 class="pub-title"><a href="https://www.mdpi.com/2076-3417/14/13/5459" target="_blank" rel="noopener">A Comparative Analysis for Optimizing Machine Learning Model Deployment in IoT Devices</a></h3>
+                                        <p class="pub-authors"><span class="me">Md. Faiyaz Abdullah Sayeedi</span>, Jannatul Ferdous Deepti, Anas Mohammad Ishfaqul Muktadir Osmani, Taimur Rahman, Safrin Sanzida Islam, Md. Motaharul Islam</p>
+                                        <p class="pub-venue">Applied Sciences, MDPI, 2024</p>
+                                        <ul class="pub-links">
+                                            <li><a href="https://www.mdpi.com/2076-3417/14/13/5459" target="_blank" rel="noopener">paper</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
+
+                        <div class="pub-group">
+                            <h3 class="pub-group-title">Conference Papers <span class="count">(8)</span></h3>
+                            <ul class="pub-list">
+                                <li class="pub-item">
+                                    <span class="pub-id">[C1]</span>
+                                    <div class="pub-body">
+                                        <h3 class="pub-title"><a href="https://arxiv.org/abs/2603.21165" target="_blank" rel="noopener">Many Dialects, Many Languages, One Cultural Lens: Evaluating Multilingual VLMs for Bengali Culture Understanding Across Historically Linked Languages and Regional Dialects</a></h3>
+                                        <p class="pub-authors"><span class="me">Md. Faiyaz Abdullah Sayeedi</span>*, Nurul Labib Sayeedi*, Shubhashis Roy Dipta, Rubaya Tabassum, Ariful Ekraj Hridoy, Mehraj Mahmood, Mahbub E Sobhani, Md Tarek Hasan, Swakkhar Shatabda <span class="eq">(* indicates equal contribution)</span></p>
+                                        <p class="pub-venue">Findings of the Conference on Empirical Methods in Natural Language Processing (EMNLP 2026)</p>
+                                        <ul class="pub-links">
+                                            <li><a href="https://arxiv.org/abs/2603.21165" target="_blank" rel="noopener">paper</a></li>
+                                            <li><a href="https://github.com/faiyazabdullah/BanglaVerse" target="_blank" rel="noopener">code</a></li>
+                                            <li><a href="https://huggingface.co/datasets/FaiyazAbdullah114708/BanglaVerse" target="_blank" rel="noopener">dataset</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="pub-item">
+                                    <span class="pub-id">[C2]</span>
+                                    <div class="pub-body">
+                                        <h3 class="pub-title"><a href="https://arxiv.org/abs/2510.07877v1" target="_blank" rel="noopener">Ready to Translate, Not to Represent? Bias and Performance Gaps in Multilingual LLMs Across Language Families and Domains</a></h3>
+                                        <p class="pub-authors"><span class="me">Md. Faiyaz Abdullah Sayeedi</span>*, Md Mahbubul Alam*, Subhey Sadi Rahman*, MD. Adnanul Islam*, Jannatul Ferdous Deepty*, Tasnim Mohiuddin, Md. Mofijul Islam, Swakkahr Shatabda <span class="eq">(* indicates equal contribution)</span></p>
+                                        <p class="pub-venue">Findings of the 64th Annual Meeting of the Association for Computational Linguistics (ACL 2026)</p>
+                                        <ul class="pub-links">
+                                            <li><a href="https://arxiv.org/abs/2510.07877v1" target="_blank" rel="noopener">paper</a></li>
+                                            <li><a href="https://github.com/faiyazabdullah/TranslationTangles" target="_blank" rel="noopener">code &amp; data</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="pub-item">
+                                    <span class="pub-id">[C3]</span>
+                                    <div class="pub-body">
+                                        <h3 class="pub-title"><a href="https://arxiv.org/abs/2510.14305" target="_blank" rel="noopener">MathMist: A Parallel Multilingual Benchmark Dataset for Mathematical Problem Solving and Reasoning</a></h3>
+                                        <p class="pub-authors">Mahbub E Sobhani, <span class="me">Md. Faiyaz Abdullah Sayeedi</span>, Tasnim Mohiuddin, Md Mofijul Islam, Swakkhar Shatabda</p>
+                                        <p class="pub-venue">Findings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (EACL 2026)</p>
+                                        <ul class="pub-links">
+                                            <li><a href="https://arxiv.org/abs/2510.14305" target="_blank" rel="noopener">paper</a></li>
+                                            <li><a href="https://github.com/mahbubhimel/MathMist" target="_blank" rel="noopener">code</a></li>
+                                            <li><a href="https://huggingface.co/datasets/mahbubhimel/MathMist" target="_blank" rel="noopener">dataset</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="pub-item">
+                                    <span class="pub-id">[C4]</span>
+                                    <div class="pub-body">
+                                        <h3 class="pub-title"><a href="https://aclanthology.org/2026.starsem-conference.22/" target="_blank" rel="noopener">Can LLMs Solve My Grandma&rsquo;s Riddle? Evaluating Multilingual Large Language Models on Reasoning Traditional Bangla Tricky Riddles</a></h3>
+                                        <p class="pub-authors"><span class="me">Md. Faiyaz Abdullah Sayeedi</span>*, Nurul Labib Sayeedi*, Khushnur Binte Jahangir, Swakkhar Shatabda, Sarah Masud Preum <span class="eq">(* indicates equal contribution)</span></p>
+                                        <p class="pub-venue">Poster Presentation, 15th Joint Conference on Lexical and Computational Semantics (*SEM 2026), co-located with ACL 2026</p>
+                                        <ul class="pub-links">
+                                            <li><a href="https://aclanthology.org/2026.starsem-conference.22/" target="_blank" rel="noopener">paper</a></li>
+                                            <li><a href="https://github.com/Labib1610/BanglaRiddleEval" target="_blank" rel="noopener">code</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="pub-item">
+                                    <span class="pub-id">[C5]</span>
+                                    <div class="pub-body">
+                                        <h3 class="pub-title"><a href="https://openreview.net/forum?id=3s4hFx8pYs" target="_blank" rel="noopener">MosquitoFusion: A Multiclass Dataset for Real-Time Detection of Mosquitoes, Swarms, and Breeding Sites Using Deep Learning</a></h3>
+                                        <p class="pub-authors"><span class="me">Md. Faiyaz Abdullah Sayeedi</span>, Md Ashiqur Rahman, Fahim Hafiz</p>
+                                        <p class="pub-venue">Notable (Top 5%), Tiny Papers Track, Oral Presentation, The Twelfth International Conference on Learning Representations (ICLR 2024)</p>
+                                        <ul class="pub-links">
+                                            <li><a href="https://openreview.net/forum?id=3s4hFx8pYs" target="_blank" rel="noopener">paper</a></li>
+                                            <li><a href="https://github.com/faiyazabdullah/MosquitoFusion" target="_blank" rel="noopener">code</a></li>
+                                            <li><a href="https://www.kaggle.com/datasets/faiyazabdullah/mosquitofusion-dataset" target="_blank" rel="noopener">dataset</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="pub-item">
+                                    <span class="pub-id">[C6]</span>
+                                    <div class="pub-body">
+                                        <h3 class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10752222" target="_blank" rel="noopener">MosquitoMiner: A Light Weight Rover for Detecting and Eliminating Mosquito Breeding Sites</a></h3>
+                                        <p class="pub-authors">MD. Adnanul Islam, <span class="me">Md. Faiyaz Abdullah Sayeedi</span>, Jannatul Ferdous Deepti, Shahanur Rahman Bappy, Safrin Sanzida Islam, Fahim Hafiz</p>
+                                        <p class="pub-venue">Oral Presentation, IEEE Region 10 Symposium 2024 (TENSYMP 2024)</p>
+                                        <ul class="pub-links">
+                                            <li><a href="https://ieeexplore.ieee.org/abstract/document/10752222" target="_blank" rel="noopener">paper</a></li>
+                                            <li><a href="https://github.com/faiyazabdullah/MosquitoMiner" target="_blank" rel="noopener">code</a></li>
+                                            <li><a href="https://youtu.be/VjfZQ4wg4fo?si=EnXBxRBhhO32ySQ6" target="_blank" rel="noopener">presentation</a></li>
+                                            <li><a href="https://youtu.be/UL2HmXnCcOk?si=wmeyFCr_HBQmp7KE" target="_blank" rel="noopener">demo</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="pub-item">
+                                    <span class="pub-id">[C7]</span>
+                                    <div class="pub-body">
+                                        <h3 class="pub-title"><a href="https://www.researchgate.net/profile/Md-Sayeedi/publication/380823901_BrailleSense_Deep_Learning_for_Braille_Character_Classification/links/66503d8d0b0d2845745498af/BrailleSense-Deep-Learning-for-Braille-Character-Classification.pdf" target="_blank" rel="noopener">BrailleSense: Deep Learning for Braille Character Classification</a></h3>
+                                        <p class="pub-authors"><span class="me">Md. Faiyaz Abdullah Sayeedi</span>, Anas Mohammad Ishfaqul Muktadir Osmani, Dewan Md. Farid</p>
+                                        <p class="pub-venue">Oral Presentation, 6th International Conference on Electrical Engineering and Information Communication Technology (ICEEICT 2024)</p>
+                                        <ul class="pub-links">
+                                            <li><a href="https://www.researchgate.net/profile/Md-Sayeedi/publication/380823901_BrailleSense_Deep_Learning_for_Braille_Character_Classification/links/66503d8d0b0d2845745498af/BrailleSense-Deep-Learning-for-Braille-Character-Classification.pdf" target="_blank" rel="noopener">paper</a></li>
+                                            <li><a href="https://github.com/faiyazabdullah/BrailleNet" target="_blank" rel="noopener">code</a></li>
+                                            <li><a href="https://youtu.be/pIBeAQVHl0g?si=nqRBpbaPQZNHD_My" target="_blank" rel="noopener">presentation</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="pub-item">
+                                    <span class="pub-id">[C8]</span>
+                                    <div class="pub-body">
+                                        <h3 class="pub-title"><a href="https://www.researchgate.net/profile/Md-Sayeedi/publication/374629560_Fem-Scale_A_Data-Driven_Approach_for_Quantifying_Degree_of_Individual_Feminism_Perspective/links/653242501d6e8a70703f2a11/Fem-Scale-A-Data-Driven-Approach-for-Quantifying-Degree-of-Individual-Feminism-Perspective.pdf" target="_blank" rel="noopener">Fem-Scale: A Data-Driven Approach for Quantifying Degree of Individual Feminism Perspective</a></h3>
+                                        <p class="pub-authors">Jannatul Ferdous Deepti, <span class="me">Md. Faiyaz Abdullah Sayeedi</span>, Anayatul Ahad Shoikot, Safrin Sanzida Islam, Anika Tasnim Rodela, Akib Zaman</p>
+                                        <p class="pub-venue">Oral Presentation, IEEE International Conference on Contemporary Computing and Communications (InC4 2023)</p>
+                                        <ul class="pub-links">
+                                            <li><a href="https://www.researchgate.net/profile/Md-Sayeedi/publication/374629560_Fem-Scale_A_Data-Driven_Approach_for_Quantifying_Degree_of_Individual_Feminism_Perspective/links/653242501d6e8a70703f2a11/Fem-Scale-A-Data-Driven-Approach-for-Quantifying-Degree-of-Individual-Feminism-Perspective.pdf" target="_blank" rel="noopener">paper</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="pub-group">
+                            <h3 class="pub-group-title">Workshop Papers <span class="count">(5)</span></h3>
+                            <ul class="pub-list">
+                                <li class="pub-item">
+                                    <span class="pub-id">[W1]</span>
+                                    <div class="pub-body">
+                                        <h3 class="pub-title"><a href="https://arxiv.org/abs/2510.17726" target="_blank" rel="noopener">Rethinking Search: A Study of University Students&rsquo; Perspectives on Using LLMs and Traditional Search Engines in Academic Problem Solving</a></h3>
+                                        <p class="pub-authors"><span class="me">Md. Faiyaz Abdullah Sayeedi</span>, Md. Sadman Haque, Zobaer Ibn Razzaque, Robiul Awoul Robin, Sabila Nawshin</p>
+                                        <p class="pub-venue">Workshop on Bridging Human-Computer Interaction and Natural Language Processing (HCI+NLP), co-located with EMNLP 2025</p>
+                                        <ul class="pub-links">
+                                            <li><a href="https://arxiv.org/abs/2510.17726" target="_blank" rel="noopener">paper</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="pub-item">
+                                    <span class="pub-id">[W2]</span>
+                                    <div class="pub-body">
+                                        <h3 class="pub-title"><a href="https://openreview.net/forum?id=GNRjyXZmGY" target="_blank" rel="noopener">MIMIC: Multimodal Islamophobic Meme Identification and Classification</a></h3>
+                                        <p class="pub-authors"><span class="me">Md. Faiyaz Abdullah Sayeedi</span>*, S M Jishanul Islam*, Sadia Ahmmed*, Sahid Hossain Mustakim*, Swapnil Khandoker*, Syed Tasdid Azam Dhrubo*, Nahid Hossain <span class="eq">(* indicates equal contribution)</span></p>
+                                        <p class="pub-venue">Poster Presentation, Muslims in ML Workshop (MusIML), co-located with NeurIPS 2024</p>
+                                        <ul class="pub-links">
+                                            <li><a href="https://openreview.net/forum?id=GNRjyXZmGY" target="_blank" rel="noopener">paper</a></li>
+                                            <li><a href="https://github.com/faiyazabdullah/MIMIC" target="_blank" rel="noopener">code</a></li>
+                                            <li><a href="https://youtu.be/2sLl2bN3oD8?si=zcgVc4cBNU1EhASN" target="_blank" rel="noopener">presentation</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="pub-item">
+                                    <span class="pub-id">[W3]</span>
+                                    <div class="pub-body">
+                                        <h3 class="pub-title"><a href="https://arxiv.org/abs/2512.16698" target="_blank" rel="noopener">Do Multi-Agents Solve Better Than Single? Evaluating Agentic Frameworks for Diagram-Grounded Geometry Problem Solving and Reasoning</a></h3>
+                                        <p class="pub-authors"><span class="me">Md. Faiyaz Abdullah Sayeedi</span>*, Mahbub E Sobhani*, Mohammad Nehad Alam, Proma Hossain Progga, Swakkhar Shatabda <span class="eq">(* indicates equal contribution)</span></p>
+                                        <p class="pub-venue">EACL 2026 Student Research Workshop (SRW)</p>
+                                        <ul class="pub-links">
+                                            <li><a href="https://arxiv.org/abs/2512.16698" target="_blank" rel="noopener">paper</a></li>
+                                            <li><a href="https://github.com/faiyazabdullah/Interpreter-Solver" target="_blank" rel="noopener">code</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="pub-item">
+                                    <span class="pub-id">[W4]</span>
+                                    <div class="pub-body">
+                                        <h3 class="pub-title"><a href="https://arxiv.org/abs/2506.14629" target="_blank" rel="noopener">VisText-Mosquito: A Unified Multimodal Benchmark Dataset for Visual Detection, Segmentation, and Textual Reasoning on Mosquito Breeding Sites</a></h3>
+                                        <p class="pub-authors"><span class="me">Md. Faiyaz Abdullah Sayeedi</span>*, Md. Adnanul Islam*, Md. Asaduzzaman Shuvo, Shahanur Rahman Bappy, Muhammad Ziaur Rahman, Md Asiful Islam, Swakkhar Shatabda <span class="eq">(* indicates equal contribution)</span></p>
+                                        <p class="pub-venue">International Workshop on Vision Intelligence for Real-world Challenges, IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPRW 2026)</p>
+                                        <ul class="pub-links">
+                                            <li><a href="https://arxiv.org/abs/2506.14629" target="_blank" rel="noopener">paper</a></li>
+                                            <li><a href="https://github.com/adnanul-islam-jisun/VisText-Mosquito" target="_blank" rel="noopener">code</a></li>
+                                            <li><a href="https://data.mendeley.com/datasets/rtsfh7jh7p/2" target="_blank" rel="noopener">dataset</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="pub-item">
+                                    <span class="pub-id">[W5]</span>
+                                    <div class="pub-body">
+                                        <h3 class="pub-title"><a href="https://arxiv.org/abs/2605.24919" target="_blank" rel="noopener">MultiHaluDet: Multilingual Hallucination Detection via LLM Hidden State Probing</a></h3>
+                                        <p class="pub-authors">Riasad Alvi, Nurul Labib Sayeedi, <span class="me">Md. Faiyaz Abdullah Sayeedi</span></p>
+                                        <p class="pub-venue">ACL 2026 Workshop on Multilinguality in the Era of Large Language Models (MeLLM @ ACL 2026)</p>
+                                        <ul class="pub-links">
+                                            <li><a href="https://arxiv.org/abs/2605.24919" target="_blank" rel="noopener">paper</a></li>
+                                            <li><a href="https://github.com/alvi-uiu/MULTIHALUDET" target="_blank" rel="noopener">code</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
                     </div>
                 </main>
-                <aside class="col-md-4 hidden-sm hidden-xs">
-                    <div class="widget widget-nav">
-                        <h3 class="widget-title">Site Navigation</h3>
-                        <ul>
-                            <li>
-                                <a href="index.html">About</a>
-                            </li>
-                            <li>
-                                <a href="articles.html">Articles</a>
-                            </li>
-                            <li>
-                                <a href="projects.html">Projects</a>
-                            </li>
-                            <li>
-                                <a href="datasets.html">Datasets</a>
-                            </li>
-                            <li>
-                                <strong>Publications 𝄪</strong>
-                            </li>
-                            <li>
-                                <a href="curriculumvita.html">Curriculum vitae</a>
-                            </li>
-                            <!-- <li>
-                                <a href="honor_achievement.html">Honor & Achievement</a>
-                            </li> -->
-                        </ul>
-                    </div>
-                    <div class="widget widget-recent-posts">
-                        <h3 class="widget-title">Highlights</h3>
-                        <ul>
-                            <li>
-                                <a href="https://arxiv.org/abs/2603.21165" target="_blank">EMNLP 2026 (Findings) Paper Accepted - "Many Dialects, Many Languages, One Cultural Lens: Evaluating Multilingual VLMs for Bengali Culture Understanding Across Historically Linked Languages and Regional Dialects"</a>
-                            </li>
-                            <li>
-                                <a href="https://arxiv.org/abs/2510.07877v1" target="_blank">ACL 2026 (Findings) Paper Accepted - "Ready to Translate, Not to Represent? Bias and Performance Gaps in Multilingual LLMs Across Language Families and Domains"</a>
-                            </li>
-                            <li>
-                                <a href="https://arxiv.org/abs/2510.14305" target="_blank">EACL 2026 (Findings) Paper Accepted - "MathMist: A Parallel Multilingual Benchmark Dataset for Mathematical Problem Solving and Reasoning"</a>
-                            </li>
-                            <li>
-                                <a href="https://aclanthology.org/2026.starsem-conference.22/" target="_blank">*SEM 2026 Paper Accepted - "Can LLMs Solve My Grandma’s Riddle? Evaluating Multilingual Large Language Models on Reasoning Traditional Bangla Tricky Riddles"</a>
-                            </li>
-                            <li>
-                                <a href="https://arxiv.org/abs/2506.14629" target="_blank">CVPR 2026 Workshop Paper Accepted - "VisText-Mosquito: A Unified Multimodal Benchmark Dataset for Visual Detection, Segmentation, and Textual Reasoning on Mosquito Breeding Sites"</a>
-                            </li>
-                            <li>
-                                <a href="https://arxiv.org/abs/2512.16698" target="_blank">EACL 2026 SRW Paper Accepted - "Do Multi-Agents Solve Better Than Single? Evaluating Agentic Frameworks for Diagram-Grounded Geometry Problem Solving and Reasoning"</a>
-                            </li>
-                            <li>
-                                <a href="https://arxiv.org/abs/2605.24919" target="_blank">ACL 2026 Workshop (MeLLM) Paper Accepted - "MultiHaluDet: Multilingual Hallucination Detection via LLM Hidden State Probing"</a>
-                            </li>
-                            <li>
-                                <a href="https://arxiv.org/abs/2510.17726" target="_blank">EMNLP 2025 Workshop (HCI+NLP) Paper Accepted - "Rethinking Search: A Study of University Students’ Perspectives on Using LLMs and Traditional Search Engines in Academic Problem Solving"</a>
-                            </li>
-                            <li>
-                                <a href="https://ieeexplore.ieee.org/document/11036671" target="_blank">IEEE Access Journal Paper Accepted - "JailbreakTracer: Explainable Detection of Jailbreaking Prompts in LLMs Using Synthetic Data Generation"</a>
-                            </li>
-                            <li>
-                                <a href="https://www.sciencedirect.com/science/article/pii/S2352340925000630" target="_blank">Data in Brief, Elsevier Journal - "ElectroCom61: A Multiclass Dataset for Detection of Electronic Components"</a>
-                            </li>
-                            <li>
-                                <a href="https://openreview.net/forum?id=3s4hFx8pYs" target="_blank">ICLR 2024 Paper Accepted (Notable - Top 5%) - "MosquitoFusion: A Multiclass Dataset for Real-Time Detection of Mosquitoes, Swarms, and Breeding Sites"</a>
-                            </li>
-                            <li>
-                                <a href="https://openreview.net/forum?id=GNRjyXZmGY" target="_blank">NeurIPS 2024 Workshop (MusIML) Paper Accepted - "MIMIC: Multimodal Islamophobic Meme Identification and Classification"</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="widget widget-life-event">
-                        <h3 class="widget-title">Life Events</h3>
-                        <ul>
-                            <li>
-                                <a href="#">Joined as Research Assistant at BRAC University (Mar 2026)</a>
-                            </li>
-                            <li>
-                                <a href="#">Reviewer for ACL Rolling Review (ARR), *SEM 2026 and Springer Nature journals</a>
-                            </li>
-                            <li>
-                                <a href="#">Completed BSc in Computer Science and Engineering at United International University (2025)</a>
-                            </li>
-                            <li>
-                                <a href="#">Joined as Research Assistant at MIRA Wing, CCDS, IUB (May 2025)</a>
-                            </li>
-                            <li>
-                                <a href="#">Joined as AI Intern at Ontik Technology (Mar 2025)</a>
-                            </li>
-                            <li>
-                                <a href="#">Travel Grant (1500 USD) to present at ICLR 2024 in Vienna, Austria</a>
-                            </li>
-                            <li>
-                                <a href="#">Best Poster Award - CSE Project Show Spring 2024, UIU</a>
-                            </li>
-                            <li>
-                                <a href="#">Champion - Python for AI and ML Competition 2024, UIU App Forum</a>
-                            </li>
-                            <li>
-                                <a href="#">Finalist - National Blockchain Olympiad Bangladesh</a>
-                            </li>
-                        </ul>
-                    </div>
-                </aside>
             </div>
         </div>
 
@@ -527,7 +299,7 @@
         <div class="container" style="margin-top: 6rem;">
             <div class="row">
                 <h2 class="title text-center">Let's Connect</h2>
-                <div class="col-md-8">
+                <div class="col-md-12">
                     <article class="post" style="margin-top: 2rem;">
                         <div class="entry-content clearfix">
                             <form action="mailto:faiyazabdullah114708@gmail.com" method="post" enctype="text/plain"
@@ -559,81 +331,56 @@
                                         class="ion-social-github"></span></a></li>
                         </ul>
                     </div>
+
+                <div class="col-md-12" style="margin-top: 5rem;">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="widget widget-info">
+                                <h3 class="widget-title">Personal Information</h3>
+                                <ul>
+                                    <li>
+                                        <p>phone: +880 1704 054900</p>
+                                    </li>
+                                    <li>
+                                        <p>email: faiyazabdullah114708@gmail.com</p>
+                                    </li>
+                                    <li>
+                                        <p>edu mail: msayeedi212049@bscse.uiu.ac.bd</p>
+                                    </li>
+                                    <li>
+                                        <p>address: F-37/16, Joint Quarter, Ring Rd, Dhaka 1207, Bangladesh</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="widget widget-link">
+                                <h3 class="widget-title">Social Links</h3>
+                                <ul>
+                                    <li>
+                                        <a href="https://scholar.google.com/citations?user=gLTfVpwAAAAJ&hl=en" target="_blank">scholar/mdfaiyazabdullahsayeedi</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/mdfaiyazabdullahsayeedi/" target="_blank">linkedin/mdfaiyazabdullahsayeedi</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/faiyazabdullah" target="_blank">github/faiyazabdullah</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.researchgate.net/profile/Md-Sayeedi" target="_blank">researchgate/Md-Sayeedi</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://orcid.org/0009-0007-3079-7806" target="_blank">orcid/0009-0007-3079-7806</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/faiyazabdullah336908" target="_blank">facebook/faiyazabdullah</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <aside class="col-md-4">
-                    <div class="widget widget-info">
-                        <h3 class="widget-title">Personal Information</h3>
-                        <ul>
-                            <li>
-                                <p>phone: +880 1704 054900</p>
-                            </li>
-                            <li>
-                                <p>email: faiyazabdullah114708@gmail.com</p>
-                            </li>
-                            <li>
-                                <p>edu mail: msayeedi212049@bscse.uiu.ac.bd</p>
-                            </li>
-                            <li>
-                                <p>address: F-37/16, Joint Quarter, Ring Rd, Dhaka 1207, Bangladesh</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="widget widget-link">
-                        <h3 class="widget-title">Social Links</h3>
-                        <ul>
-                            <li>
-                                <a href="https://www.linkedin.com/in/mdfaiyazabdullahsayeedi/"
-                                    target="_blank">linkedin/mdfaiyazabdullahsayeedi</a>
-                            </li>
-                            <li>
-                                <a href="https://scholar.google.com/citations?user=gLTfVpwAAAAJ&hl=en"
-                                    target="_blank">scholar/mdfaiyazabdullahsayeedi</a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/faiyazabdullah"
-                                    target="_blank">github/mdfaiyazabdullahsayeedi</a>
-                            </li>
-                            <li>
-                                <a href="https://www.researchgate.net/profile/Md-Sayeedi"
-                                    target="_blank">researchgate/mdfaiyazabdullahsayeedi</a>
-                            </li>
-                            <li>
-                                <a href="https://orcid.org/0009-0007-3079-7806"
-                                    target="_blank">orcid/mdfaiyazabdullahsayeedi</a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/faiyazabdullah336908"
-                                    target="_blank">facebook/faiyazabdullah</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="widget widget-nav">
-                        <h3 class="widget-title">Site Navigation</h3>
-                        <ul>
-                            <li>
-                                <a href="index.html">About</a>
-                            </li>
-                            <li>
-                                <a href="articles.html">Articles</a>
-                            </li>
-                            <li>
-                                <a href="projects.html">Projects</a>
-                            </li>
-                            <li>
-                                <a href="datasets.html">Datasets</a>
-                            </li>
-                            <li>
-                                <strong>Publications 𝄪</strong>
-                            </li>
-                            <li>
-                                <a href="curriculumvita.html">Curriculum vitae</a>
-                            </li>
-                            <!-- <li>
-                                <a href="honor_achievement.html">Honor & Achievement</a>
-                            </li> -->
-                        </ul>
-                    </div>
-                </aside>
+                </div>
             </div>
         </div>
     </div>
@@ -674,9 +421,9 @@
                 <li>
                     <a href="curriculumvita.html">Curriculum vitae</a>
                 </li>
-                <!-- <li>
-                    <a href="honor_achievement.html">Honor & Achievement</a>
-                </li> -->
+                <li>
+                    <a href="honor_achievement.html">Honor &amp; Achievement</a>
+                </li>
             </ul>
         </nav>
     </div>
@@ -689,59 +436,37 @@
     </a> -->
 
     <script src="js/script.js"></script>
-    <!-- jQuery and JS logic -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- publication search -->
     <script>
-        $(function () {
-            var $articles = $('#pubContainer .post');
-            var $pagination = $('#pagination');
-            var $search = $('#searchInput');
-            var perPage = 3;
-            var currentPage = 1;
+        document.addEventListener("DOMContentLoaded", function () {
+            var search = document.getElementById("searchInput");
+            var empty = document.getElementById("pubEmpty");
+            var groups = [].slice.call(document.querySelectorAll(".pub-group"));
+            var items = [].slice.call(document.querySelectorAll(".pub-item"));
 
-            function filterArticles() {
-                var query = $search.val().toLowerCase();
-                return $articles.filter(function () {
-                    var haystack = [
-                        $(this).find('.entry-title').text(),
-                        $(this).find('.entry-meta').text(),
-                        $(this).find('.tag').text(),
-                        $(this).find('.entry-content > p').text()
-                    ].join(' ').toLowerCase();
-                    return haystack.includes(query);
-                });
-            }
-
-            function renderPage(visibleArticles) {
-                var totalPages = Math.ceil(visibleArticles.length / perPage);
-                var start = (currentPage - 1) * perPage;
-                var end = start + perPage;
-
-                $articles.hide();
-                visibleArticles.slice(start, end).show();
-
-                // Render pagination
-                $pagination.empty();
-                for (var i = 1; i <= totalPages; i++) {
-                    var li = $('<li>').toggleClass('active', i === currentPage);
-                    var a = $('<a href="#">').text(i).click((function (i) {
-                        return function (e) {
-                            e.preventDefault();
-                            currentPage = i;
-                            renderPage(filterArticles());
-                        };
-                    })(i));
-                    li.append(a).appendTo($pagination);
-                }
-            }
-
-            $search.on('input', function () {
-                currentPage = 1;
-                renderPage(filterArticles());
+            items.forEach(function (item) {
+                item.setAttribute("data-haystack", item.textContent.toLowerCase().replace(/\s+/g, " "));
+                item.setAttribute("data-hit", "1");
             });
 
-            // Initial render
-            renderPage($articles);
+            search.addEventListener("input", function () {
+                var q = search.value.trim().toLowerCase();
+                var total = 0;
+
+                items.forEach(function (item) {
+                    var hit = !q || item.getAttribute("data-haystack").indexOf(q) !== -1;
+                    item.style.display = hit ? "" : "none";
+                    item.setAttribute("data-hit", hit ? "1" : "0");
+                    if (hit) { total++; }
+                });
+
+                groups.forEach(function (group) {
+                    var visible = group.querySelectorAll('.pub-item[data-hit="1"]').length;
+                    group.style.display = visible ? "" : "none";
+                });
+
+                empty.style.display = total ? "none" : "block";
+            });
         });
     </script>
 </body>
