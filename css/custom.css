@@ -1822,3 +1822,231 @@ figure {
 main > .section-title:first-child {
 	margin-top: 3rem;
 }
+
+
+/**
+ * 15.0 - Curriculum Vitae Page
+ */
+
+.cv-lead {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 16.5px;
+	line-height: 1.85;
+	color: #444;
+	background: #ffffffcc;
+	border: 1px solid #eee;
+	border-left: 3px solid #111;
+	padding: 20px 24px;
+	margin: 22px 0 0;
+}
+
+.cv-actions {
+	margin-top: 26px;
+	text-align: center;
+}
+
+.btn-cv {
+	display: inline-block;
+	border: 1px solid #111;
+	background: #111;
+	color: #fff;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	padding: 13px 34px;
+	border-radius: 3px;
+	transition: all 0.25s ease-in;
+}
+
+.btn-cv:hover,
+.btn-cv:focus {
+	background: #fff;
+	color: #111;
+}
+
+/* entries reuse .timeline, with an optional detail list */
+.timeline .tl-points {
+	list-style: none;
+	padding: 0;
+	margin: 8px 0 0;
+}
+
+.timeline .tl-points li {
+	position: static;
+	border: none;
+	padding: 0 0 4px 16px;
+	font-size: 14.5px;
+	line-height: 1.7;
+	color: #555;
+}
+
+.timeline .tl-points li::before {
+	content: '–';
+	position: absolute;
+	left: 26px;
+	top: auto;
+	width: auto;
+	height: auto;
+	background: none;
+	border: none;
+	border-radius: 0;
+	color: #aaa;
+}
+
+.timeline .tl-meta {
+	display: block;
+	font-size: 14.5px;
+	line-height: 1.75;
+	color: #555;
+	margin-top: 4px;
+}
+
+.timeline .tl-meta strong {
+	color: #222;
+	font-weight: 500;
+}
+
+/* skills */
+.skill-list {
+	margin: 22px 0 0;
+	border-top: 1px solid #eee;
+}
+
+.skill-row {
+	display: flex;
+	gap: 20px;
+	padding: 14px 4px;
+	border-bottom: 1px solid #eee;
+	background: #ffffffa9;
+}
+
+.skill-row dt {
+	flex: 0 0 190px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+	color: #111;
+	padding-top: 2px;
+}
+
+.skill-row dd {
+	flex: 1 1 auto;
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14.5px;
+	line-height: 1.75;
+	color: #555;
+}
+
+/* compact list used for awards + services on the CV page */
+.cv-list {
+	list-style: none;
+	padding: 0;
+	margin: 22px 0 0;
+}
+
+.cv-list li {
+	position: relative;
+	padding: 11px 0 11px 26px;
+	border-bottom: 1px dashed #e8e8e8;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 15px;
+	line-height: 1.7;
+	color: #555;
+}
+
+.cv-list li:last-child {
+	border-bottom: none;
+}
+
+.cv-list li::before {
+	content: '▹';
+	position: absolute;
+	left: 4px;
+	top: 11px;
+	color: #999;
+}
+
+.cv-list li strong {
+	color: #111;
+	font-weight: 500;
+}
+
+/**
+ * 16.0 - Awards & Honors Page
+ */
+
+.award-grid {
+	list-style: none;
+	padding: 0;
+	margin: 22px 0 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 14px;
+}
+
+.award-grid li {
+	flex: 1 1 320px;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #e4e4e4;
+	background: #ffffffcc;
+	padding: 22px 24px;
+	transition: border-color 0.25s ease-in, transform 0.25s ease;
+}
+
+.award-grid li:hover {
+	border-color: #111;
+}
+
+.award-kind {
+	display: inline-block;
+	align-self: flex-start;
+	background: #111;
+	color: #fff;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 11px;
+	letter-spacing: 0.07em;
+	text-transform: uppercase;
+	padding: 3px 9px;
+	border-radius: 3px;
+	margin-bottom: 12px;
+}
+
+.award-kind.grant {
+	background: #8a5a00;
+}
+
+.award-title {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 1.45;
+	color: #111;
+	margin: 0 0 8px;
+}
+
+.award-detail {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14.5px;
+	line-height: 1.7;
+	color: #666;
+	margin: 0;
+}
+
+@media (max-width: 767px) {
+	.skill-row {
+		flex-direction: column;
+		gap: 4px;
+	}
+
+	.skill-row dt {
+		flex: none;
+	}
+
+	.cv-lead {
+		padding: 16px 18px;
+	}
+}
