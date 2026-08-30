@@ -2367,3 +2367,177 @@ main > .section-title:first-child {
 	margin-right: 10px;
 	vertical-align: -0.18em;
 }
+
+/**
+ * 20.0 - About / bio facts
+ */
+
+.bio-lead {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 17px;
+	line-height: 1.8;
+	color: #333;
+	margin: 0 0 22px;
+}
+
+/* animated marker highlight */
+.hl {
+	position: relative;
+	font-weight: 500;
+	color: #111;
+	background-image: linear-gradient(#e9e9e9, #e9e9e9);
+	background-repeat: no-repeat;
+	background-position: 0 88%;
+	background-size: 100% 34%;
+	padding: 0 2px;
+	transition: background-size 0.28s ease, color 0.28s ease;
+}
+
+.bio-lead:hover .hl,
+.hl:hover {
+	background-size: 100% 100%;
+}
+
+.fact-grid {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 22px;
+}
+
+.fact {
+	display: flex;
+	align-items: flex-start;
+	gap: 16px;
+	padding: 16px 18px;
+	border: 1px solid #ececec;
+	border-left: 2px solid #ddd;
+	background: #ffffffa9;
+	margin-bottom: 10px;
+	transition: border-left-color 0.25s ease, background 0.25s ease, transform 0.25s ease;
+}
+
+.fact:hover {
+	border-left-color: #111;
+	background: #fafafa;
+	transform: translateX(3px);
+}
+
+.fact-icon {
+	flex: 0 0 auto;
+	width: 38px;
+	height: 38px;
+	line-height: 36px;
+	text-align: center;
+	font-size: 19px;
+	color: #555;
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 50%;
+	transition: all 0.25s ease;
+}
+
+.fact:hover .fact-icon {
+	background: #111;
+	border-color: #111;
+	color: #fff;
+}
+
+.fact-body {
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+.fact-label {
+	display: block;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 10.5px;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: #999;
+	margin-bottom: 5px;
+}
+
+.fact-value {
+	display: block;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #111;
+}
+
+.fact-meta {
+	display: block;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666;
+	margin-top: 5px;
+}
+
+.fact-meta a,
+.fact-value a {
+	color: #333;
+	border-bottom: 1px solid #ccc;
+}
+
+.fact-meta a:hover,
+.fact-value a:hover {
+	color: #000;
+	border-bottom-color: #000;
+}
+
+/* venue chips */
+.venue-row {
+	margin-top: 2px;
+}
+
+.venue {
+	display: inline-block;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 0.04em;
+	color: #444;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 3px 10px;
+	margin: 0 6px 6px 0;
+	transition: all 0.2s ease-in;
+}
+
+.venue:hover {
+	background: #111;
+	border-color: #111;
+	color: #fff;
+	cursor: default;
+}
+
+.bio-aside {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 15px;
+	line-height: 1.75;
+	color: #777;
+	margin: 0;
+	padding-top: 16px;
+	border-top: 1px dashed #e6e6e6;
+}
+
+.bio-aside .ion-ios-football {
+	margin-right: 7px;
+	font-size: 17px;
+	color: #aaa;
+	vertical-align: -1px;
+}
+
+@media (max-width: 767px) {
+	.fact {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.fact:hover {
+		transform: none;
+	}
+}
