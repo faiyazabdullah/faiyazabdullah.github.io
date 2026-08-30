@@ -2224,3 +2224,20 @@ main > .section-title:first-child {
 		width: 100%;
 	}
 }
+
+/* obfuscated address under the profile affiliation */
+.profile-email {
+	margin: -12px 0 16px;
+}
+
+.profile-email code {
+	font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+	font-size: 13.5px;
+	letter-spacing: 0.02em;
+	color: #444;
+	background: #f4f4f4;
+	border: 1px solid #e6e6e6;
+	border-radius: 3px;
+	padding: 4px 10px;
+	white-space: normal;
+}
