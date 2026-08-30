@@ -207,10 +207,6 @@
                         </article>                        
                     </div>
 
-                    <!-- Pagination -->
-                    <div class="text-center">
-                        <ul class="pagination" id="pagination"></ul>
-                    </div>
                 </main>
             </div>
         </div>
@@ -340,10 +336,7 @@
     <script>
         $(function () {
             var $articles = $('#projectContainer .post');
-            var $pagination = $('#pagination');
             var $search = $('#searchInput');
-            var perPage = 3;
-            var currentPage = 1;
 
             function filterArticles() {
                 var query = $search.val().toLowerCase();
@@ -354,36 +347,17 @@
                 });
             }
 
-            function renderPage(visibleArticles) {
-                var totalPages = Math.ceil(visibleArticles.length / perPage);
-                var start = (currentPage - 1) * perPage;
-                var end = start + perPage;
-
+            function render(visibleArticles) {
                 $articles.hide();
-                visibleArticles.slice(start, end).show();
-
-                // Render pagination
-                $pagination.empty();
-                for (var i = 1; i <= totalPages; i++) {
-                    var li = $('<li>').toggleClass('active', i === currentPage);
-                    var a = $('<a href="#">').text(i).click((function (i) {
-                        return function (e) {
-                            e.preventDefault();
-                            currentPage = i;
-                            renderPage(filterArticles());
-                        };
-                    })(i));
-                    li.append(a).appendTo($pagination);
-                }
+                visibleArticles.show();
             }
 
             $search.on('input', function () {
-                currentPage = 1;
-                renderPage(filterArticles());
+                render(filterArticles());
             });
 
-            // Initial render
-            renderPage($articles);
+            // show every project on one page
+            render($articles);
         });
     </script>
 </body>
