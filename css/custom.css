@@ -2050,3 +2050,177 @@ main > .section-title:first-child {
 		padding: 16px 18px;
 	}
 }
+
+
+/**
+ * 17.0 - Contact Section
+ */
+
+.contact-block {
+	margin-top: 26px;
+}
+
+.contact-panel {
+	background: #ffffffcc;
+	border: 1px solid #e8e8e8;
+	padding: 30px 32px;
+	height: 100%;
+}
+
+.contact-panel h3 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: 15px;
+	letter-spacing: 0.07em;
+	text-transform: uppercase;
+	color: #111;
+	margin: 0 0 20px;
+}
+
+/* form */
+.contact-block .contact-form input,
+.contact-block .contact-form textarea {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	margin-bottom: 14px;
+	width: 100%;
+	padding: 13px 15px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	color: #333;
+	background: #fff;
+	transition: border-color 0.25s linear, box-shadow 0.25s linear;
+}
+
+.contact-block .contact-form textarea {
+	min-height: 158px;
+	resize: vertical;
+}
+
+.contact-block .contact-form input:focus,
+.contact-block .contact-form textarea:focus {
+	border-color: #111;
+	box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.04);
+	outline: none;
+}
+
+.contact-block .contact-form input::placeholder,
+.contact-block .contact-form textarea::placeholder {
+	color: #aaa;
+}
+
+.btn-contact {
+	display: inline-block;
+	width: 100%;
+	border: 1px solid #111;
+	background: #111;
+	color: #fff;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.07em;
+	text-transform: uppercase;
+	padding: 14px 30px;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: all 0.25s ease-in;
+}
+
+.btn-contact:hover,
+.btn-contact:focus {
+	background: #fff;
+	color: #111;
+}
+
+.btn-contact .ion-ios-paperplane {
+	margin-right: 8px;
+	font-size: 17px;
+	vertical-align: -1px;
+}
+
+/* details */
+.contact-details {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 28px;
+}
+
+.contact-details li {
+	display: flex;
+	align-items: flex-start;
+	gap: 14px;
+	padding: 0 0 18px;
+}
+
+.contact-details li:last-child {
+	padding-bottom: 0;
+}
+
+.contact-details .ci {
+	flex: 0 0 auto;
+	width: 36px;
+	height: 36px;
+	line-height: 34px;
+	text-align: center;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+	font-size: 17px;
+	color: #555;
+	background: #fff;
+}
+
+.contact-details .cd-label {
+	display: block;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 11.5px;
+	letter-spacing: 0.09em;
+	text-transform: uppercase;
+	color: #999;
+	margin-bottom: 2px;
+}
+
+.contact-details .cd-value,
+.contact-details .cd-value a {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 15px;
+	line-height: 1.6;
+	color: #222;
+	word-break: break-word;
+}
+
+.contact-details .cd-value a {
+	border-bottom: 1px solid #ccc;
+}
+
+.contact-details .cd-value a:hover {
+	border-bottom-color: #000;
+}
+
+@media (max-width: 991px) {
+	.contact-panel {
+		height: auto;
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 767px) {
+	.contact-panel {
+		padding: 24px 20px;
+	}
+}
+
+/* equal-height contact panels on desktop */
+@media (min-width: 992px) {
+	.contact-block > .row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.contact-block > .row > [class*="col-md-"] {
+		display: flex;
+	}
+
+	.contact-block > .row > [class*="col-md-"] > .contact-panel {
+		width: 100%;
+	}
+}
