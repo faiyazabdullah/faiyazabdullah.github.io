@@ -1449,6 +1449,14 @@ figure {
 	font-size: 13px;
 }
 
+.pub-abstract {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14.5px;
+	line-height: 1.75;
+	color: #555;
+	margin: 0 0 8px;
+}
+
 .pub-venue {
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 14.5px;
