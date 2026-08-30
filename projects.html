@@ -62,153 +62,64 @@
     <div class="content-body">
         <div class="container">
             <h2 class="section-title">Projects</h2>
+            <p class="section-note">Selected engineering and research projects, with source code and demos.</p>
+
             <div class="row">
-                <main class="col-md-12" style="margin-top: 5rem;">
-                    <!-- Search bar -->
-                    <input type="text" id="searchInput" class="form-control" placeholder="Search projects...">
+                <main class="col-md-12" style="margin-top: 2rem;">
+                    <input type="text" id="searchInput" class="pub-search" placeholder="Search by name, topic or technology…" autocomplete="off">
+                    <p id="projEmpty" class="pub-empty" style="display:none;">No projects match that search.</p>
 
-                    <!-- projects Section -->
-                    <div id="projectContainer" style="min-height: 65vh; margin-top: 3rem;">
-                        <!-- deign with left image -->
-                        <article class="post row" style="margin-bottom: 20px;">
-                            <div class="col-sm-3 col-xs-12 text-center" style="padding: 5px;">
-                                <img src="img/projects/rover.jpg" class="img-responsive center-block" alt="MosquitoMiner Rover">
-                                <div class="highlight" style="margin-top: 10px;">
-                                    <a href="https://youtu.be/UL2HmXnCcOk" target="_blank" title="YouTube Video">
-                                        <span class="ion-social-youtube project-button"></span>
-                                    </a>
-                                    <a href="https://arxiv.org/abs/2409.08078" target="_blank" title="Preprint on arXiv">
-                                        <span class="ion-document-text project-button"></span>
-                                    </a>
-                                    <a href="https://youtu.be/VjfZQ4wg4fo?si=WBSI9N_KYwfv1qSb" target="_blank" title="Paper Presentation">
-                                        <span class="ion-ios-paper project-button"></span>
-                                    </a>
-                                    <a href="https://github.com/faiyazabdullah/MosquitoMiner" target="_blank" title="GitHub Repository">
-                                        <span class="ion-social-github project-button"></span>
-                                    </a>
+                    <div id="projectContainer" style="min-height: 45vh; margin-top: 3rem;">
+                        <ul class="pub-list">
+                            <li class="pub-item">
+                                <span class="pub-id">[P1]</span>
+                                <div class="pub-body">
+                                    <h3 class="pub-title"><a href="https://www.linkedin.com/posts/mdfaiyazabdullahsayeedi_none-of-us-are-happy-about-the-current-situation-activity-7222284206310113281-yTe6?utm_source=share&utm_medium=member_desktop&rcm=ACoAADYgKjsBi_dYWdWVmwxmS6RVK-hst-tqmps" target="_blank" rel="noopener">MosquitoMiner: A Light Weight Rover for Detecting and Eliminating Mosquito Breeding Sites</a></h3>
+                                    <p class="pub-abstract">MosquitoMiner is an innovative solution designed to autonomously detect and eliminate mosquito breeding sites, reducing the risk of mosquito-borne diseases. This project combines advanced robotics, computer vision, and machine learning to create a light-weight rover that can navigate through various terrains, identify potential breeding grounds, and apply targeted treatments to disrupt the mosquito lifecycle.</p>
+                                    <p class="pub-venue">Robotics &middot; Computer Vision &middot; AI for Public Health</p>
+                                    <ul class="pub-links">
+                                        <li><a href="https://youtu.be/UL2HmXnCcOk" target="_blank" rel="noopener">video</a></li>
+                                        <li><a href="https://arxiv.org/abs/2409.08078" target="_blank" rel="noopener">paper</a></li>
+                                        <li><a href="https://youtu.be/VjfZQ4wg4fo?si=WBSI9N_KYwfv1qSb" target="_blank" rel="noopener">presentation</a></li>
+                                        <li><a href="https://github.com/faiyazabdullah/MosquitoMiner" target="_blank" rel="noopener">code</a></li>
+                                    </ul>
                                 </div>
-                            </div>
-                            <div class="col-sm-9 col-xs-12">
-                                <header class="entry-header">
-                                    <h1 class="text-left" style="font-size: 26px; margin-top: 0; font-weight: bold;">
-                                        <a href="https://www.linkedin.com/posts/mdfaiyazabdullahsayeedi_none-of-us-are-happy-about-the-current-situation-activity-7222284206310113281-yTe6?utm_source=share&utm_medium=member_desktop&rcm=ACoAADYgKjsBi_dYWdWVmwxmS6RVK-hst-tqmps" target="_blank">
-                                            <span style="font-size: 26px; font-weight: bolder;">⤤</span>
-                                            <span class="ds-title">MosquitoMiner: A Light Weight Rover for Detecting and Eliminating Mosquito Breeding Sites</span>
-                                        </a>
-                                    </h1>
-                                    <div class="entry-meta" style="text-align: left !important;">
-                                        <span class="tag">Robotics</span>
-                                        <span class="tag">Computer Vision</span>
-                                        <span class="tag">AI for Public Health</span>
-                                    </div>
-                                </header>
-                                <hr>
-                                <div class="entry-content clearfix">
-                                    <p class="text-left"><strong>Project Overview:</strong> MosquitoMiner is an innovative solution designed to autonomously detect and eliminate mosquito breeding sites, reducing the risk of mosquito-borne diseases. This project combines advanced robotics, computer vision, and machine learning to create a light-weight rover that can navigate through various terrains, identify potential breeding grounds, and apply targeted treatments to disrupt the mosquito lifecycle.</p>
+                            </li>
+                            <li class="pub-item">
+                                <span class="pub-id">[P2]</span>
+                                <div class="pub-body">
+                                    <h3 class="pub-title"><a href="https://github.com/faiyazabdullah/ProMaS" target="_blank" rel="noopener">ProMaS: Centralized Platform for Modern Project Management</a></h3>
+                                    <p class="pub-abstract">ProMaS is a centralized database platform designed to modernize project management workflows by supporting resource allocation, budget control, and progress tracking. It streamlines operations for teams of all sizes while enhancing collaboration and communication among stakeholders, making it a powerful tool for delivering projects on time and within scope.</p>
+                                    <p class="pub-venue">Project Management &middot; Collaboration Tools</p>
+                                    <ul class="pub-links">
+                                        <li><a href="https://github.com/faiyazabdullah/ProMaS" target="_blank" rel="noopener">code</a></li>
+                                    </ul>
                                 </div>
-                            </div>
-                        </article>                                            
-
-                        <!-- deign with right image -->
-                        <article class="post row" style="margin-bottom: 20px;">
-                            <!-- Image: shows at top on XS, right on MD+ -->
-                            <div class="col-sm-3 col-sm-push-9 col-xs-12 text-center" style="padding: 5px;">
-                                <img src="img/projects/promas.png" class="img-responsive center-block" alt="ProMaS Project Image">
-                                <div class="highlight">
-                                    <a href="https://github.com/faiyazabdullah/ProMaS" target="_blank" title="Source Code">
-                                        <span class="ion-social-github project-button"></span>
-                                    </a>
+                            </li>
+                            <li class="pub-item">
+                                <span class="pub-id">[P3]</span>
+                                <div class="pub-body">
+                                    <h3 class="pub-title"><a href="https://github.com/faiyazabdullah/UIU-Health-Management-System" target="_blank" rel="noopener">UIU Healthcare Management</a></h3>
+                                    <p class="pub-abstract">UIU Healthcare Management is a streamlined solution for managing healthcare services, featuring appointment booking, prescription handling, and access to hospital locations for UIU students, staff, and faculty members. It integrates real-time GPS data to help users find the nearest hospitals and offers a searchable database of frequently asked health-related questions to improve patient awareness and self-care.</p>
+                                    <p class="pub-venue">Healthcare &middot; Mobile App &middot; GPS Integration</p>
+                                    <ul class="pub-links">
+                                        <li><a href="https://github.com/faiyazabdullah/UIU-Health-Management-System" target="_blank" rel="noopener">code</a></li>
+                                    </ul>
                                 </div>
-                            </div>
-                        
-                            <!-- Content: shows below image on XS, left on MD+ -->
-                            <div class="col-sm-9 col-sm-pull-3 col-xs-12">
-                                <header class="entry-header">
-                                    <h1 class="text-left" style="font-size: 28px; margin-top: 0; font-weight: bold;">
-                                        <a href="https://github.com/faiyazabdullah/ProMaS" target="_blank">
-                                            <span style="font-size: 28px; font-weight: bolder;">⤤</span>
-                                            <span class="ds-title">ProMaS: Centralized Platform for Modern Project Management</span>
-                                        </a>
-                                    </h1>
-                                    <div class="entry-meta" style="text-align: left !important;">
-                                        <span class="tag">Project Management</span>
-                                        <span class="tag">Collaboration Tools</span>
-                                    </div>
-                                </header>
-                                <hr>
-                                <div class="entry-content clearfix">
-                                    <p class="text-left"><strong>Project Overview:</strong> ProMaS is a centralized database platform designed to modernize project management workflows by supporting resource allocation, budget control, and progress tracking. It streamlines operations for teams of all sizes while enhancing collaboration and communication among stakeholders, making it a powerful tool for delivering projects on time and within scope.</p>
+                            </li>
+                            <li class="pub-item">
+                                <span class="pub-id">[P4]</span>
+                                <div class="pub-body">
+                                    <h3 class="pub-title"><a href="https://github.com/TawsifTorabi/MoscProtec" target="_blank" rel="noopener">MoscProtec: AI-Based Platform for Mosquito-Borne Disease Monitoring</a></h3>
+                                    <p class="pub-abstract">MoscProtec is a digital platform that leverages artificial intelligence to collect, analyze, and visualize data related to mosquito-borne diseases. The system also supports automatic identification of mosquito species to guide public awareness campaigns and healthcare response. Designed to assist both researchers and the general public, it contributes to early warning and prevention efforts.</p>
+                                    <p class="pub-venue">Public Health &middot; AI &middot; Mosquito Classification</p>
+                                    <ul class="pub-links">
+                                        <li><a href="https://github.com/TawsifTorabi/MoscProtec" target="_blank" rel="noopener">code</a></li>
+                                    </ul>
                                 </div>
-                                
-                            </div>
-                        </article>                        
-
-                        <!-- deign with left image -->
-                        <article class="post row" style="margin-bottom: 20px;">
-                            <div class="col-sm-3 col-xs-12 text-center" style="padding: 5px;">
-                                <img src="img/projects/uiu_health.jpg" class="img-responsive center-block" alt="UIU Healthcare Management Project">
-                                <div class="highlight" style="margin-top: 10px;">
-                                    <a href="https://github.com/faiyazabdullah/UIU-Health-Management-System" target="_blank" title="GitHub Repository">
-                                        <span class="ion-social-github project-button"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-sm-9 col-xs-12">
-                                <header class="entry-header">
-                                    <h1 class="text-left" style="font-size: 26px; margin-top: 0; font-weight: bold;">
-                                        <a href="https://github.com/faiyazabdullah/UIU-Health-Management-System" target="_blank">
-                                            <span style="font-size: 26px; font-weight: bolder;">⤤</span>
-                                            <span class="ds-title">UIU Healthcare Management</span>
-                                        </a>
-                                    </h1>
-                                    <div class="entry-meta" style="text-align: left !important;">
-                                        <span class="tag">Healthcare</span>
-                                        <span class="tag">Mobile App</span>
-                                        <span class="tag">GPS Integration</span>
-                                    </div>
-                                </header>
-                                <hr>
-                                <div class="entry-content clearfix">
-                                    <p class="text-left"><strong>Project Overview:</strong> UIU Healthcare Management is a streamlined solution for managing healthcare services, featuring appointment booking, prescription handling, and access to hospital locations for UIU students, staff, and faculty members. It integrates real-time GPS data to help users find the nearest hospitals and offers a searchable database of frequently asked health-related questions to improve patient awareness and self-care.</p>
-                                </div>
-                            </div>
-                        </article>                                              
-
-                        <!-- deign with right image -->
-                        <article class="post row" style="margin-bottom: 20px;">
-                            <!-- Image: shows at top on XS, right on MD+ -->
-                            <div class="col-sm-3 col-sm-push-9 col-xs-12 text-center" style="padding: 5px;">
-                                <img src="img/projects/moscprotec.jpeg" class="img-responsive center-block" alt="MoscProtec Project">
-                                <div class="highlight" style="margin-top: 10px;">
-                                    <a href="https://github.com/TawsifTorabi/MoscProtec" target="_blank" title="GitHub Repository">
-                                        <span class="ion-social-github project-button"></span>
-                                    </a>
-                                </div>
-                            </div>
-                        
-                            <!-- Content: shows below image on XS, left on MD+ -->
-                            <div class="col-sm-9 col-sm-pull-3 col-xs-12">
-                                <header class="entry-header">
-                                    <h1 class="text-left" style="font-size: 28px; margin-top: 0; font-weight: bold;">
-                                        <a href="https://github.com/TawsifTorabi/MoscProtec" target="_blank">
-                                            <span style="font-size: 28px; font-weight: bolder;">⤤</span>
-                                            <span class="ds-title">MoscProtec: AI-Based Platform for Mosquito-Borne Disease Monitoring</span>
-                                        </a>
-                                    </h1>
-                                    <div class="entry-meta" style="text-align: left !important;">
-                                        <span class="tag">Public Health</span>
-                                        <span class="tag">AI</span>
-                                        <span class="tag">Mosquito Classification</span>
-                                    </div>
-                                </header>
-                                <hr>
-                                <div class="entry-content clearfix">
-                                    <p class="text-left"><strong>Project Overview:</strong> MoscProtec is a digital platform that leverages artificial intelligence to collect, analyze, and visualize data related to mosquito-borne diseases. The system also supports automatic identification of mosquito species to guide public awareness campaigns and healthcare response. Designed to assist both researchers and the general public, it contributes to early warning and prevention efforts.</p>
-                                </div>
-                            </div>
-                        </article>                        
+                            </li>
+                        </ul>
                     </div>
-
                 </main>
             </div>
         </div>
@@ -339,33 +250,29 @@
     </a> -->
 
     <script src="js/script.js"></script>
-    <!-- jQuery and JS logic -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- project search -->
     <script>
-        $(function () {
-            var $articles = $('#projectContainer .post');
-            var $search = $('#searchInput');
+        document.addEventListener("DOMContentLoaded", function () {
+            var search = document.getElementById("searchInput");
+            var empty = document.getElementById("projEmpty");
+            var items = [].slice.call(document.querySelectorAll(".pub-item"));
 
-            function filterArticles() {
-                var query = $search.val().toLowerCase();
-                return $articles.filter(function () {
-                    var title = $(this).find('.ds-title').text().toLowerCase();
-                    var content = $(this).find('.entry-content').text().toLowerCase();
-                    return title.includes(query) || content.includes(query);
-                });
-            }
-
-            function render(visibleArticles) {
-                $articles.hide();
-                visibleArticles.show();
-            }
-
-            $search.on('input', function () {
-                render(filterArticles());
+            items.forEach(function (item) {
+                item.setAttribute("data-haystack", item.textContent.toLowerCase().replace(/\s+/g, " "));
             });
 
-            // show every project on one page
-            render($articles);
+            search.addEventListener("input", function () {
+                var q = search.value.trim().toLowerCase();
+                var total = 0;
+
+                items.forEach(function (item) {
+                    var hit = !q || item.getAttribute("data-haystack").indexOf(q) !== -1;
+                    item.style.display = hit ? "" : "none";
+                    if (hit) { total++; }
+                });
+
+                empty.style.display = total ? "none" : "block";
+            });
         });
     </script>
 </body>
