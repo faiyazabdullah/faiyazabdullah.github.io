@@ -2356,3 +2356,14 @@ main > .section-title:first-child {
 		padding: 20px 18px;
 	}
 }
+
+/**
+ * 19.0 - Logo mark
+ */
+
+.logo-icon {
+	height: 1.15em;
+	width: auto;
+	margin-right: 10px;
+	vertical-align: -0.18em;
+}
