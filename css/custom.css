@@ -1151,21 +1151,14 @@ figure {
 	margin-bottom: 18px;
 }
 
-.profile-name {
+.profile-role {
 	font-family: 'Lato', sans-serif;
 	font-weight: 700;
 	font-size: 2.1em;
 	line-height: 1.25;
-	margin: 0 0 6px;
 	color: #111;
-}
-
-.profile-role {
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 17px;
-	color: #444;
-	margin: 0 0 4px;
-	min-height: 26px;
+	margin: 0 0 8px;
+	min-height: 44px;
 }
 
 .profile-role .sep {
@@ -1719,15 +1712,16 @@ figure {
 		padding: 22px 18px 18px;
 	}
 
-	.profile-name {
+	.profile-role {
 		font-size: 1.7em;
-		text-align: center;
 	}
 
 	.profile-role,
-	.profile-affiliation {
+	.profile-affiliation,
+	.profile-email {
 		text-align: center;
 	}
+
 
 	.profile-links {
 		text-align: center;
@@ -2240,4 +2234,11 @@ main > .section-title:first-child {
 	border-radius: 3px;
 	padding: 4px 10px;
 	white-space: normal;
+}
+
+@media (max-width: 767px) {
+	.profile-email code {
+		font-size: 11.5px;
+		padding: 4px 8px;
+	}
 }
