@@ -2250,3 +2250,109 @@ main > .section-title:first-child {
 		padding: 4px 8px;
 	}
 }
+
+/**
+ * 18.0 - PhD availability callout (home page)
+ */
+
+.phd-callout {
+	display: flex;
+	align-items: flex-start;
+	gap: 20px;
+	margin: 26px 0 4px;
+	padding: 24px 28px;
+	background: #f5f5f5;
+	border: 1px solid #e4e4e4;
+	border-left: 3px solid #111;
+	border-radius: 3px;
+}
+
+.phd-icon {
+	flex: 0 0 auto;
+	width: 46px;
+	height: 46px;
+	line-height: 44px;
+	text-align: center;
+	font-size: 23px;
+	color: #333;
+	background: #fff;
+	border: 1px solid #d8d8d8;
+	border-radius: 50%;
+}
+
+.phd-body {
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+.phd-label {
+	display: inline-block;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 10.5px;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+	color: #fff;
+	background: #111;
+	padding: 3px 9px;
+	border-radius: 2px;
+	margin-bottom: 10px;
+}
+
+.phd-title {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.4;
+	color: #111;
+	margin: 0 0 8px;
+}
+
+.phd-text {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 15px;
+	line-height: 1.75;
+	color: #555;
+	margin: 0;
+}
+
+.phd-text strong {
+	color: #111;
+	font-weight: 500;
+}
+
+.phd-actions {
+	display: block;
+	margin-top: 16px;
+}
+
+.phd-actions a {
+	display: inline-block;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 12.5px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #444;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 7px 16px;
+	margin: 0 8px 6px 0;
+	transition: all 0.25s ease-in;
+}
+
+.phd-actions a:hover,
+.phd-actions a:focus {
+	background: #111;
+	border-color: #111;
+	color: #fff;
+}
+
+@media (max-width: 767px) {
+	.phd-callout {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: 12px;
+		padding: 20px 18px;
+	}
+}
