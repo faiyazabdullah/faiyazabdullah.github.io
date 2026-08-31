@@ -1326,16 +1326,23 @@ figure {
 
 .news-body {
 	flex: 1 1 auto;
+	min-width: 0;
+	display: flex;
+	align-items: stretch;
 }
 
 .news-date {
-	display: inline-block;
-	min-width: 88px;
+	flex: 0 0 88px;
 	font-weight: 500;
 	color: #000;
 	border-right: 1px solid #ddd;
-	margin-right: 12px;
-	padding-right: 12px;
+	margin-right: 14px;
+	padding-right: 14px;
+}
+
+.news-text {
+	flex: 1 1 auto;
+	min-width: 0;
 }
 
 .news-text a {
@@ -1739,6 +1746,10 @@ figure {
 		flex-direction: column;
 		gap: 4px;
 		padding-left: 12px;
+	}
+
+	.news-body {
+		display: block;
 	}
 
 	.news-date {
@@ -2570,5 +2581,112 @@ main > .section-title:first-child {
 
 	.bio-box:hover {
 		transform: none;
+	}
+}
+
+/**
+ * 22.0 - Grouped profile links
+ */
+
+.profile-link-groups {
+	margin-top: 4px;
+}
+
+.link-group + .link-group {
+	margin-top: 12px;
+	padding-top: 12px;
+	border-top: 1px dashed #ececec;
+}
+
+.link-group-label {
+	display: block;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 10.5px;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: #999;
+	margin-bottom: 8px;
+}
+
+.link-group .profile-links {
+	margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+	.link-group-label {
+		text-align: center;
+	}
+}
+
+/**
+ * 23.0 - Off-duty aside
+ */
+
+.bio-aside.bio-box {
+	margin: 0 0 16px;
+	padding: 20px 24px;
+	border-top: 1px solid #ececec;
+}
+
+.bio-aside .aside-text {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 15px;
+	line-height: 1.8;
+	color: #666;
+	margin: 0;
+}
+
+.bio-aside .aside-text strong {
+	color: #111;
+	font-weight: 500;
+}
+
+.hobby-chips {
+	list-style: none;
+	padding: 0;
+	margin: 14px 0 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.hobby-chips li {
+	display: inline-flex;
+	align-items: center;
+	gap: 7px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 13px;
+	letter-spacing: 0.02em;
+	color: #444;
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 20px;
+	padding: 5px 14px 5px 11px;
+	cursor: default;
+	transition: border-color 0.25s ease, color 0.25s ease,
+		background 0.25s ease, transform 0.25s ease;
+}
+
+.hobby-chips li:hover {
+	background: #111;
+	border-color: #111;
+	color: #fff;
+	transform: translateY(-2px);
+}
+
+.hobby-emoji {
+	font-size: 15px;
+	line-height: 1;
+	display: inline-block;
+	transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.hobby-chips li:hover .hobby-emoji {
+	transform: scale(1.35) rotate(-8deg);
+}
+
+@media (max-width: 767px) {
+	.hobby-chips {
+		justify-content: center;
 	}
 }
