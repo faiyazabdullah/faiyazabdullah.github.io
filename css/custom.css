@@ -1181,13 +1181,13 @@ figure {
 
 .profile-links li {
 	display: inline-block;
-	margin: 0 8px 8px 0;
+	margin: 0 6px 8px 0;
 }
 
 .profile-links a {
 	display: inline-block;
 	border: 1px solid #ccc;
-	padding: 5px 13px;
+	padding: 5px 11px;
 	font-size: 13px;
 	font-family: 'Ubuntu', sans-serif;
 	letter-spacing: 0.04em;
